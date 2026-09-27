@@ -1,0 +1,1420 @@
+/* Honda Haripur - Matching honda.com.pk Design */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --honda-red: #E40521;
+    --honda-red-dark: #c0041c;
+    --honda-black: #1a1a1a;
+    --honda-dark: #333333;
+    --honda-gray: #666666;
+    --honda-light: #f5f5f5;
+    --honda-silver: #999999;
+    --honda-white: #ffffff;
+    --honda-border: #e0e0e0;
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--honda-dark);
+    background: var(--honda-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Bar */
+.top-bar {
+    background: var(--honda-black);
+    color: white;
+    font-size: 0.8rem;
+    padding: 6px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar a {
+    color: rgba(255,255,255,0.7);
+    margin-left: 16px;
+    transition: var(--transition);
+}
+
+.top-bar a:hover {
+    color: var(--honda-red);
+}
+
+/* Header */
+header {
+    background: white;
+    border-bottom: 1px solid var(--honda-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 44px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--honda-black);
+    line-height: 1.2;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--honda-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4px;
+}
+
+nav ul > li {
+    position: relative;
+}
+
+nav ul > li > a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--honda-dark);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+nav ul > li > a:hover,
+nav ul > li > a.active {
+    color: var(--honda-red);
+}
+
+nav ul > li > a i {
+    font-size: 0.65rem;
+    transition: var(--transition);
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: white;
+    box-shadow: var(--shadow-lg);
+    border-top: 3px solid var(--honda-red);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+nav ul > li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 0.88rem;
+    color: var(--honda-dark);
+    border-bottom: 1px solid var(--honda-border);
+    transition: var(--transition);
+}
+
+.dropdown li a:hover {
+    background: var(--honda-light);
+    color: var(--honda-red);
+    padding-left: 28px;
+}
+
+.dropdown .dropdown-header {
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--honda-red);
+    background: var(--honda-light);
+    border-bottom: 1px solid var(--honda-border);
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--honda-black);
+    cursor: pointer;
+}
+
+/* Hero Banner Slider */
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+    background: var(--honda-black);
+}
+
+.hero-slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.hero-slide {
+    min-width: 100%;
+    position: relative;
+    height: 520px;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+    z-index: 5;
+}
+
+.hero-slide-content .badge {
+    display: inline-block;
+    background: var(--honda-red);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.hero-slide-content h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-slide-content p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.hero-slide-content .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero-slide-content .price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+    z-index: 2;
+}
+
+.hero-nav {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.hero-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.hero-dot.active {
+    background: var(--honda-red);
+    width: 32px;
+    border-radius: 6px;
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero-arrow:hover {
+    background: var(--honda-red);
+}
+
+.hero-arrow.prev {
+    left: 20px;
+}
+
+.hero-arrow.next {
+    right: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+    border-radius: 2px;
+}
+
+.btn-red {
+    background: var(--honda-red);
+    color: white;
+    border-color: var(--honda-red);
+}
+
+.btn-red:hover {
+    background: var(--honda-red-dark);
+    border-color: var(--honda-red-dark);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: var(--honda-red);
+}
+
+.btn-outline-red {
+    background: transparent;
+    color: var(--honda-red);
+    border-color: var(--honda-red);
+}
+
+.btn-outline-red:hover {
+    background: var(--honda-red);
+    color: white;
+}
+
+.btn-black {
+    background: var(--honda-black);
+    color: white;
+    border-color: var(--honda-black);
+}
+
+.btn-black:hover {
+    background: var(--honda-dark);
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-light {
+    background: var(--honda-light);
+}
+
+.section-dark {
+    background: var(--honda-black);
+    color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--honda-black);
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--honda-red);
+}
+
+.section-header p {
+    color: var(--honda-gray);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+.section-dark .section-header h2 {
+    color: white;
+}
+
+.section-dark .section-header p {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Model Lineup Tabs */
+.model-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--honda-border);
+    flex-wrap: wrap;
+}
+
+.model-tab {
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--honda-gray);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.model-tab.active {
+    color: var(--honda-red);
+}
+
+.model-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--honda-red);
+}
+
+.model-tab:hover {
+    color: var(--honda-red);
+}
+
+/* Variant Sub Tabs */
+.variant-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.variant-tab {
+    padding: 10px 24px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--honda-gray);
+    background: white;
+    border: 1px solid var(--honda-border);
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+.variant-tab.active {
+    background: var(--honda-red);
+    color: white;
+    border-color: var(--honda-red);
+}
+
+.variant-tab:hover {
+    border-color: var(--honda-red);
+    color: var(--honda-red);
+}
+
+.variant-tab.active:hover {
+    color: white;
+}
+
+/* Model Display */
+.model-display {
+    display: none;
+}
+
+.model-display.active {
+    display: block;
+}
+
+.model-card-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--honda-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.model-card-image {
+    position: relative;
+    background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.model-card-image img {
+    max-height: 350px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.model-card-main:hover .model-card-image img {
+    transform: scale(1.05);
+}
+
+.model-card-info {
+    padding: 40px 40px 40px 0;
+}
+
+.model-card-info .model-badge {
+    display: inline-block;
+    background: var(--honda-red);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.model-card-info h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--honda-black);
+    margin-bottom: 8px;
+}
+
+.model-card-info .model-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--honda-red);
+    margin-bottom: 8px;
+}
+
+.model-card-info .model-price-note {
+    font-size: 0.8rem;
+    color: var(--honda-silver);
+    margin-bottom: 24px;
+}
+
+.model-card-info .model-desc {
+    color: var(--honda-gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.model-card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Promo Banners Grid */
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.promo-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promo-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.promo-card-overlay h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.promo-card-overlay a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.promo-card-overlay a:hover {
+    color: var(--honda-red);
+}
+
+/* Feature Cards */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid var(--honda-border);
+    border-radius: 8px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    border-color: var(--honda-red);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.feature-card i {
+    font-size: 36px;
+    color: var(--honda-red);
+    margin-bottom: 16px;
+}
+
+.feature-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--honda-black);
+}
+
+.feature-card p {
+    font-size: 0.88rem;
+    color: var(--honda-gray);
+    line-height: 1.6;
+}
+
+.feature-card .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    color: var(--honda-red);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.feature-card .card-link:hover {
+    gap: 10px;
+}
+
+/* Stats */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--honda-red);
+}
+
+.stat-item p {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* News Cards */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--honda-border);
+}
+
+.news-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 24px;
+}
+
+.news-card-content .news-date {
+    font-size: 0.8rem;
+    color: var(--honda-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.news-card-content h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--honda-black);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.news-card-content p {
+    font-size: 0.9rem;
+    color: var(--honda-gray);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.news-card-content .read-more {
+    color: var(--honda-red);
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+
+.news-card-content .read-more:hover {
+    gap: 10px;
+}
+
+/* Test Drive Form */
+.testdrive-section {
+    background: var(--honda-light);
+    padding: 60px 0;
+}
+
+.testdrive-form {
+    background: white;
+    border-radius: 8px;
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testdrive-form h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--honda-black);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--honda-dark);
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 16px;
+    border: 1px solid var(--honda-border);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: var(--transition);
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--honda-red);
+    box-shadow: 0 0 0 3px rgba(228,5,33,0.1);
+}
+
+.form-actions {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* FAQ */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid var(--honda-border);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item.active {
+    border-color: var(--honda-red);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--honda-black);
+    transition: var(--transition);
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question i {
+    color: var(--honda-red);
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: var(--honda-gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    background: white;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 24px 20px;
+    max-height: 500px;
+}
+
+/* Dealer Network */
+.dealer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.dealer-card {
+    background: white;
+    border: 1px solid var(--honda-border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.dealer-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.dealer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dealer-card-content {
+    padding: 24px;
+}
+
+.dealer-card-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--honda-black);
+    margin-bottom: 8px;
+}
+
+.dealer-card-content p {
+    font-size: 0.9rem;
+    color: var(--honda-gray);
+    margin-bottom: 16px;
+}
+
+/* Footer */
+footer {
+    background: var(--honda-black);
+    color: white;
+    padding: 60px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-brand p {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 16px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+.footer-social a:hover {
+    background: var(--honda-red);
+}
+
+.footer-col h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--honda-red);
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.88rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.4);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255,255,255,0.4);
+    transition: var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: white;
+}
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(135deg, var(--honda-black) 0%, var(--honda-dark) 100%);
+    padding: 100px 0 60px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(228,5,33,0.1);
+    border-radius: 50%;
+}
+
+.page-banner h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.page-banner p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    position: relative;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.breadcrumb a {
+    color: rgba(255,255,255,0.6);
+    transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+    color: var(--honda-red);
+}
+
+.breadcrumb span {
+    color: rgba(255,255,255,0.4);
+}
+
+/* Back to top */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    background: var(--honda-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(228,5,33,0.3);
+    transition: var(--transition);
+}
+
+.back-to-top:hover {
+    background: var(--honda-red-dark);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    nav ul > li > a {
+        padding: 12px 10px;
+        font-size: 0.82rem;
+    }
+    
+    .model-card-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .model-card-info {
+        padding: 24px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .promo-grid,
+    .news-grid,
+    .dealer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+    
+    .mobile-toggle {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 360px;
+        height: 100vh;
+        background: white;
+        padding: 80px 32px 32px;
+        transition: right 0.3s ease;
+        z-index: 1001;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+        overflow-y: auto;
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav ul > li > a {
+        padding: 16px 0;
+        border-bottom: 1px solid var(--honda-border);
+        font-size: 1rem;
+    }
+    
+    .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border-top: none;
+        display: none;
+    }
+    
+    nav ul > li:hover .dropdown {
+        display: block;
+    }
+    
+    .dropdown li a {
+        padding-left: 16px !important;
+        border-bottom: none;
+        font-size: 0.9rem;
+    }
+    
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .hero-slide {
+        height: 360px;
+    }
+    
+    .hero-slide-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-slide-content p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-slide-content .price {
+        font-size: 1.2rem;
+    }
+    
+    .hero-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .model-tabs {
+        gap: 0;
+    }
+    
+    .model-tab {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .variant-tabs {
+        gap: 6px;
+    }
+    
+    .variant-tab {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+    
+    .model-card-image {
+        min-height: 250px;
+    }
+    
+    .model-card-image img {
+        max-height: 220px;
+    }
+    
+    .model-card-actions {
+        flex-direction: column;
+    }
+    
+    .promo-grid,
+    .news-grid,
+    .dealer-grid,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testdrive-form {
+        padding: 24px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+}
