@@ -881,3 +881,132 @@
         padding: 36px 22px;
     }
 }
+
+@media (max-width: 480px) {
+    .ehev-hero {
+        padding: 40px 14px 36px;
+    }
+
+    .ehev-hero-logo {
+        font-size: 1.6rem;
+    }
+
+    .ehev-hero-logo .e-badge {
+        font-size: 1.1rem;
+        padding: 1px 7px;
+    }
+
+    .ehev-hero-tag {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .ehev-hero-tag strong {
+        font-size: 1.1rem;
+    }
+
+    .ehev-toc {
+        gap: 6px;
+        padding: 12px;
+    }
+
+    .ehev-toc a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .ehev-panel-title {
+        font-size: 1.3rem;
+    }
+
+    .ehev-section-title {
+        font-size: 1.35rem;
+    }
+
+    .ehev-section-sub {
+        font-size: 1rem;
+    }
+
+    .ehev-body-text {
+        font-size: 0.93rem;
+        line-height: 1.75;
+    }
+
+    .comp-tab {
+        min-width: 150px;
+        font-size: 0.78rem;
+        padding: 11px 6px;
+    }
+
+    .comp-stage {
+        padding: 12px;
+    }
+
+    .comp-diagram {
+        min-height: 200px;
+    }
+
+    .comp-callout {
+        display: none !important;
+    }
+
+    .comp-marker {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+    }
+
+    .comp-detail-body h4 {
+        font-size: 0.98rem;
+    }
+
+    .comp-detail-body p {
+        font-size: 0.9rem;
+    }
+
+    .mode-card {
+        padding: 20px 18px;
+    }
+
+    .mode-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .mode-card p {
+        font-size: 0.9rem;
+    }
+
+    .diff-card {
+        padding: 20px 18px;
+    }
+
+    .video-info {
+        padding: 14px;
+    }
+
+    .voice-card {
+        padding: 22px 18px;
+    }
+
+    .subscribe-box {
+        padding: 28px 18px;
+        border-radius: 12px;
+    }
+
+    .subscribe-box h3 {
+        font-size: 1.35rem;
+    }
+
+    .ehev-faq .faq-question {
+        padding: 15px 16px;
+        font-size: 0.93rem;
+    }
+
+    .ehev-faq .faq-item.active .faq-answer {
+        padding: 14px 16px;
+    }
+
+    .ehev-wrap {
+        padding: 18px 12px 36px;
+    }
+}

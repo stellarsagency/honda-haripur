@@ -21,8 +21,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         nav.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
+                    var parentLi = this.parentElement;
+                    var hasDropdown = parentLi && parentLi.querySelector(':scope > .dropdown');
+                    // Parent items with a dropdown toggle it instead of closing the menu
+                    if (hasDropdown && this.getAttribute('href') === '#') {
+                        e.preventDefault();
+                        var wasOpen = parentLi.classList.contains('open');
+                        // Close siblings
+                        parentLi.parentElement.querySelectorAll(':scope > li.open').forEach(function(li) {
+                            li.classList.remove('open');
+                        });
+                        if (!wasOpen) parentLi.classList.add('open');
+                        return;
+                    }
                     nav.classList.remove('active');
                     if (navOverlay) navOverlay.classList.remove('active');
                     document.body.style.overflow = '';

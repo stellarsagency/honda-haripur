@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showPanel(id) {
         navBtns.forEach(function(btn) {
-            btn.classList.toggle('active', btn.dataset.panel === id);
+            var isActive = btn.dataset.panel === id;
+            btn.classList.toggle('active', isActive);
+            // Keep active tab visible in horizontal mobile scroll
+            if (isActive && btn.scrollIntoView) {
+                try {
+                    btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                } catch (err) { /* older browsers */ }
+            }
         });
         panels.forEach(function(panel) {
             panel.classList.toggle('active', panel.id === id);
@@ -44,7 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showComponent(num) {
         compTabs.forEach(function(tab) {
-            tab.classList.toggle('active', tab.dataset.comp === num);
+            var isActive = tab.dataset.comp === num;
+            tab.classList.toggle('active', isActive);
+            // Keep active component tab visible in horizontal scroll
+            if (isActive && tab.scrollIntoView) {
+                try {
+                    tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                } catch (err) { /* older browsers */ }
+            }
         });
         compItems.forEach(function(item) {
             item.classList.toggle('active', item.dataset.comp === num);

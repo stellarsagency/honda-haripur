@@ -770,6 +770,41 @@ nav ul > li:hover .dropdown {
     text-align: center;
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Responsive utility grids (replace inline grid styles) */
+.grid-2,
+.grid-3,
+.grid-4 {
+    display: grid;
+    gap: 32px;
+}
+
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-2.align-center { align-items: center; }
+
 .stat-item h3 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2.5rem;
@@ -1244,6 +1279,15 @@ footer {
     .stats-row {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1295,8 +1339,17 @@ footer {
         display: none;
     }
     
-    nav ul > li:hover .dropdown {
+    nav ul > li:hover .dropdown,
+    nav ul > li.open .dropdown {
         display: block;
+    }
+    
+    nav ul > li.open > a {
+        color: var(--honda-red);
+    }
+    
+    nav ul > li.open > a i.fa-chevron-down {
+        transform: rotate(180deg);
     }
     
     .dropdown li a {
@@ -1394,6 +1447,22 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
     
     .form-grid {
         grid-template-columns: 1fr;
@@ -1416,5 +1485,114 @@ footer {
     
     .page-banner h1 {
         font-size: 2rem;
+    }
+
+    /* Mobile touch & overflow fixes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px; /* prevents iOS zoom on focus */
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .logo-text span {
+        display: none;
+    }
+
+    .header-inner {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .cta-section .btn,
+    section[style*="--honda-red"] .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .model-card-info {
+        padding: 20px 16px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slide {
+        height: 300px;
+    }
+
+    .hero-slide-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .stats-row,
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+
+    .model-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+
+    .model-tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .variant-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+
+    .variant-tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .page-banner {
+        padding: 60px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 1.7rem;
+    }
+
+    .testdrive-form {
+        padding: 20px 16px;
+    }
+
+    .feature-card {
+        padding: 24px 20px;
     }
 }
