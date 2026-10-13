@@ -2110,3 +2110,23 @@ header .logo-text span,
 footer .logo-text span {
     color: rgba(255, 255, 255, 0.55);
 }
+
+/* ===== Honda Haripur theme — same palette, subtle variation ===== */
+header {
+    background: linear-gradient(180deg, rgba(12, 8, 10, 0.97) 0%, rgba(18, 10, 14, 0.95) 100%);
+}
+.top-bar {
+    background: linear-gradient(90deg, #0d0d0d 0%, #1c0a0e 100%);
+}
+.btn {
+    border-radius: 6px;
+}
+.btn-red {
+    box-shadow: 0 4px 14px rgba(228, 5, 33, 0.28);
+}
+.model-card:hover {
+    transform: translateY(-6px);
+}
+.quick-bar {
+    border-bottom: 3px solid var(--honda-red);
+}
