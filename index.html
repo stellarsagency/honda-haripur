@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Haripur - Authorised 2S Dealership</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ehev.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="sticky-top">
+    <div class="top-bar">
+        <div class="container">
+
+            <a href="tel:+923001234567" class="tb-call tb-call-sale" aria-label="Call For Sale" title="For Sale: +92 300 1234567"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">For Sale:</span> +92 300 1234567</a>
+            <a href="tel:+92995123456" class="tb-call" aria-label="Call After Sale" title="After Sale: +92 995 123456"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">After Sale:</span> +92 995 123456</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/honda-icon.png" alt="Honda Haripur" class="logo-img" style="height: 46px;"><span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+            </a>
+                        <nav id="nav">
+                <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="tracker.html">Tracker</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="dealer-section">
+        <div class="ds-inner"><img src="images/honda-icon.png" alt="Honda" class="badge-h"> <span class="ds-text">Authorised 2S Dealership</span></div>
+    </section>
+    <div class="quick-bar">
+        <div class="container">
+            <a href="index.html#models" class="quick-btn"><i class="fas fa-car"></i> Sales</a>
+            <a href="aftersales.html" class="quick-btn"><i class="fas fa-tools"></i> After Sales</a>
+            <a href="parts.html" class="quick-btn"><i class="fas fa-cogs"></i> Spare Parts</a>
+        </div>
+    </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Banner Slider -->
+    <section class="hero-banner">
+        <div class="hero-slides" id="heroSlides">
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=1600&q=85" alt="Honda Civic">
+                <div class="hero-overlay"></div>
+                <div class="hero-slide-content">
+                    <span class="badge">New Arrival</span>
+                    <h1>Honda Civic</h1>
+                    <p>The embodiment of sporty sophistication</p>
+                    <div class="price">From PKR 8,499,000 <span>*On the road</span></div>
+                    <div class="hero-btns">
+                        <a href="civic.html" class="btn btn-red">For More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=1600&q=85" alt="Honda HR-V">
+                <div class="hero-overlay"></div>
+                <div class="hero-slide-content">
+                    <span class="badge">Hybrid Technology</span>
+                    <h1>Honda HR-V e:HEV</h1>
+                    <p>The new era of hybrid electric driving</p>
+                    <div class="price">From PKR 9,299,000 <span>*On the road</span></div>
+                    <div class="hero-btns">
+                        <a href="hrv.html" class="btn btn-red">For More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1609676671207-d021525a635d?w=1600&q=85" alt="Honda City">
+                <div class="hero-overlay"></div>
+                <div class="hero-slide-content">
+                    <span class="badge">Special Package</span>
+                    <h1>Honda City</h1>
+                    <p>Drive your dream with the all-new City</p>
+                    <div class="price">From PKR 4,737,000 <span>*On the road</span></div>
+                    <div class="hero-btns">
+                        <a href="city.html" class="btn btn-red">For More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero-arrow prev" id="heroPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-arrow next" id="heroNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="hero-nav" id="heroNav">
+            <button class="hero-dot active" data-slide="0"></button>
+            <button class="hero-dot" data-slide="1"></button>
+            <button class="hero-dot" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Model Lineup -->
+    <section class="section" id="models">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Your Honda Car</h2>
+                <p>Explore our complete range of Honda vehicles available at Honda Haripur</p>
+            </div>
+
+            <!-- Model Tabs -->
+            <div class="model-tabs">
+                <button class="model-tab active" data-model="civic">Civic</button>
+                <button class="model-tab" data-model="hrv">HR-V</button>
+                <button class="model-tab" data-model="city">City</button>
+            </div>
+
+            <!-- Civic Variants -->
+            <div class="model-display active" id="civic">
+                <div class="variant-tabs">
+                    <button class="variant-tab active" data-variant="civic-standard">Civic Standard</button>
+                    <button class="variant-tab" data-variant="civic-oriel">Civic Oriel</button>
+                    <button class="variant-tab" data-variant="civic-rs">Civic RS</button>
+                </div>
+                <div class="variant-display active" id="civic-standard">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1761315087712-4b1bd53ce39b?w=800&q=85" alt="Honda Civic Standard">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">Standard</span>
+                            <h3>Honda Civic Standard</h3>
+                            <div class="model-price">PKR 8,499,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">Experience the perfect blend of performance and efficiency with the Civic Standard. Featuring Honda Sensing technology, turbocharged engine, and premium interior comfort.</p>
+                            <div class="model-card-actions">
+                                <a href="civic.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20Civic%20Standard&variant=Standard&price=PKR%208%2C499%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20Civic%20Standard" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+                <div class="variant-display" id="civic-oriel">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1773065083527-dc06cc1f04fe?w=800&q=85" alt="Honda Civic Oriel">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">Oriel</span>
+                            <h3>Honda Civic Oriel</h3>
+                            <div class="model-price">PKR 8,834,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">Elevate your drive with the Civic Oriel. Premium sunroof, leather-appointed seats, and advanced infotainment system for the discerning driver.</p>
+                            <div class="model-card-actions">
+                                <a href="civic.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20Civic%20Oriel&variant=Oriel&price=PKR%208%2C834%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20Civic%20Oriel" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+                <div class="variant-display" id="civic-rs">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=85" alt="Honda Civic RS">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">RS Turbo</span>
+                            <h3>Honda Civic RS Turbo</h3>
+                            <div class="model-price">PKR 10,100,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">The pinnacle of Civic performance. Turbocharged 1.5L VTEC engine, sport-tuned suspension, and exclusive RS exterior styling elements.</p>
+                            <div class="model-card-actions">
+                                <a href="civic.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20Civic%20RS%20Turbo&variant=RS%20Turbo&price=PKR%2010%2C100%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20Civic%20RS%20Turbo" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- HR-V Variants -->
+            <div class="model-display" id="hrv">
+                <div class="variant-tabs">
+                    <button class="variant-tab active" data-variant="hrv-vtis">HR-V VTI-S</button>
+                    <button class="variant-tab" data-variant="hrv-ehev">HR-V e:HEV</button>
+                </div>
+                <div class="variant-display active" id="hrv-vtis">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1572471275438-6eb23850b175?w=800&q=85" alt="Honda HR-V VTI-S">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">VTI-S</span>
+                            <h3>Honda HR-V VTI-S</h3>
+                            <div class="model-price">PKR 7,299,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">Versatile and stylish compact SUV. Honda Sensing safety suite, Magic Seats for ultimate cargo flexibility, and responsive driving dynamics.</p>
+                            <div class="model-card-actions">
+                                <a href="hrv.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20HR-V%20VTI-S&variant=VTI-S&price=PKR%207%2C299%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20HR-V%20VTI-S" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+                <div class="variant-display" id="hrv-ehev">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=800&q=85" alt="Honda HR-V e:HEV">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">e:HEV Hybrid</span>
+                            <h3>Honda HR-V e:HEV</h3>
+                            <div class="model-price">PKR 9,299,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">Experience the future of driving with Honda's advanced hybrid technology. Two-motor system delivers exceptional fuel economy without compromising performance.</p>
+                            <div class="model-card-actions">
+                                <a href="hrv.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20HR-V%20e%3AHEV&variant=e%3AHEV%20Hybrid&price=PKR%209%2C299%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20HR-V%20e%3AHEV" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- City Variants -->
+            <div class="model-display" id="city">
+                <div class="variant-tabs">
+                    <button class="variant-tab active" data-variant="city-12">City 1.2LS</button>
+                    <button class="variant-tab" data-variant="city-aspire">City Aspire 1.5LAS</button>
+                    <button class="variant-tab" data-variant="city-aspire-s">City Aspire S 1.5LAS</button>
+                </div>
+                <div class="variant-display active" id="city-12">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85" alt="Honda City 1.2LS">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">1.2LS</span>
+                            <h3>Honda City 1.2LS</h3>
+                            <div class="model-price">PKR 4,737,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">The perfect entry to the Honda family. Fuel-efficient 1.2L engine, comfortable interior, and legendary Honda reliability at an accessible price.</p>
+                            <div class="model-card-actions">
+                                <a href="city.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20City%201.2LS&variant=1.2LS&price=PKR%204%2C737%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20City%201.2LS" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+                <div class="variant-display" id="city-aspire">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85" alt="Honda City Aspire">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">Aspire 1.5LAS</span>
+                            <h3>Honda City Aspire 1.5LAS</h3>
+                            <div class="model-price">PKR 6,069,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">Step up to the Aspire with its more powerful 1.5L engine, enhanced features, and premium styling that turns heads on every road.</p>
+                            <div class="model-card-actions">
+                                <a href="city.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20City%20Aspire%201.5LAS&variant=Aspire%201.5LAS&price=PKR%206%2C069%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20City%20Aspire%201.5LAS" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+                <div class="variant-display" id="city-aspire-s">
+                    <div class="model-card-main">
+                        <div class="model-card-image">
+                            <img src="https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85" alt="Honda City Aspire S">
+                        </div>
+                        <div class="model-card-info">
+                            <span class="model-badge">Aspire S 1.5LAS</span>
+                            <h3>Honda City Aspire S 1.5LAS CVT</h3>
+                            <div class="model-price">PKR 6,149,000</div>
+                            <div class="model-price-note">*For detailed price kindly use price calculator</div>
+                            <p class="model-desc">The top-of-the-line City variant with CVT transmission, Honda Sensing, sunroof, and the most advanced features in its class.</p>
+                            <div class="model-card-actions">
+                                <a href="city.html" class="btn btn-red">Explore More</a>
+                                <a href="contact.html?car=Honda%20City%20Aspire%20S%201.5LAS%20CVT&variant=Aspire%20S%201.5LAS&price=PKR%206%2C149%2C000" class="btn btn-outline-red">Submit Inquiry</a>
+                            </div>
+                        </div>
+                                    <a href="details.html?car=Honda%20City%20Aspire%20S%201.5LAS%20CVT" class="btn btn-outline-red" style="display:inline-flex;margin-top:16px;">More Details <i class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales, After Sales & Spare Parts -->
+    <section class="section" style="background: var(--honda-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sales, After Sales &amp; Spare Parts</h2>
+                <p>Your trusted Authorised 2S Dealership in Haripur - everything for your Honda under one roof.</p>
+            </div>
+            <div class="grid-3 service-trio" style="gap: 30px;">
+                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
+                    <i class="fas fa-car" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
+                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Sales</h4>
+                    <p style="margin-bottom: 18px;">Explore the latest Honda models with flexible financing options and expert buying guidance.</p>
+                    <a href="#models" class="read-more">View Models <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
+                    <i class="fas fa-screwdriver-wrench" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
+                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">After Sales</h4>
+                    <p style="margin-bottom: 18px;">Expert engine service, scheduled maintenance and repairs to keep your Honda running at its best.</p>
+                    <a href="aftersales.html" class="read-more">View After Sales <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
+                    <i class="fas fa-cogs" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
+                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Spare Parts</h4>
+                    <p style="margin-bottom: 18px;">100% genuine Honda spare parts with full warranty, available over the counter.</p>
+                    <a href="parts.html" class="read-more">View Parts <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Banners -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Promotions</h2>
+                <p>Take advantage of our current offers at Honda Haripur</p>
+            </div>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1761315087712-4b1bd53ce39b?w=600&q=80" alt="Civic Offer">
+                    <div class="promo-card-overlay">
+                        <h4>Civic Summer Sales</h4>
+                        <a href="contact.html?offer=Civic%20Summer%20Sales">Submit Inquiry <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=600&q=80" alt="HR-V Offer">
+                    <div class="promo-card-overlay">
+                        <h4>HR-V e:HEV Summer Sales</h4>
+                        <a href="contact.html?offer=HR-V%20e%3AHEV%20Summer%20Sales">Submit Inquiry <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1609676671207-d021525a635d?w=600&q=80" alt="City Offer">
+                    <div class="promo-card-overlay">
+                        <h4>City Aspire Special Package</h4>
+                        <a href="contact.html?offer=City%20Aspire%20Special%20Package">Submit Inquiry <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="After Sales">
+                    <div class="promo-card-overlay">
+                        <h4>2026 After Sales Service Offer</h4>
+                        <a href="salesservice.html">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" alt="Financing">
+                    <div class="promo-card-overlay">
+                        <h4>Meezan Bank Financing</h4>
+                        <a href="contact.html?offer=Meezan%20Bank%20Financing">Submit Inquiry <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Insurance">
+                    <div class="promo-card-overlay">
+                        <h4>HBL Dream Honda Financing</h4>
+                        <a href="contact.html?offer=HBL%20Dream%20Honda%20Financing">Submit Inquiry <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- e:HEV Tech Section -->
+    <section class="ehev-hero">
+        <div class="ehev-hero-logo">
+            Honda <span class="e-badge">e</span> Tech
+        </div>
+        <p class="ehev-hero-tag">
+            <strong>Bring a new feeling to the world.</strong>
+            e:HEV is a hybrid that's close to an EV. It was designed to make the most of both the motor and the engine.<br>
+            It doesn't compromise on driving enjoyment or environmental performance.<br>
+            Those who have experienced it know: This joy, this excitement feels like the world is changing.
+        </p>
+    </section>
+
+    <div class="ehev-wrap" style="padding-top: 32px;">
+        <aside class="ehev-sidebar" id="ehevSidebar">
+            <button class="ehev-nav-btn active" data-panel="what-is-ehev">What is e:HEV</button>
+            <button class="ehev-nav-btn" data-panel="ehev-system">What is e:HEV System</button>
+            <button class="ehev-nav-btn" data-panel="how-works">How e:HEV Works</button>
+            <button class="ehev-nav-btn" data-panel="videos">e:HEV Learning Videos</button>
+            <button class="ehev-nav-btn" data-panel="difference">Difference e:HEV vs Others</button>
+            <button class="ehev-nav-btn" data-panel="voice">Customer Voice</button>
+            <button class="ehev-nav-btn" data-panel="subscribe">Subscribe</button>
+            <button class="ehev-nav-btn" data-panel="faqs">FAQs</button>
+        </aside>
+
+        <main class="ehev-main">
+
+            <!-- 1. What is e:HEV -->
+            <section class="ehev-panel active" id="what-is-ehev">
+                <h2 class="ehev-section-title">Original Hybrid System</h2>
+                <p class="ehev-section-sub">Integrates Environmental Performance and FUN at a High Level</p>
+                <p class="ehev-body-text">
+                    Honda began taking initiatives, ahead of the times, to adopt electrification technologies to its automobiles in various ways, in order to reduce CO2 emissions, which Honda considers a critical challenge for a manufacturer of mobility products. Among these electrification technologies, hybrid-electric systems are the most familiar one, and Honda is further expanding its lineup of hybrid-electric models.
+                </p>
+                <p class="ehev-body-text">
+                    A hybrid-electric vehicle is equipped with electric motors in addition to an engine and achieves excellent fuel economy by efficiently using those two power sources.
+                </p>
+                <p class="ehev-body-text">
+                    The e:HEV hybrid-electric system was created by combining all of the engine and electrification technologies Honda has amassed to date and adopting a host of new technologies to achieve overwhelmingly high fuel economy and a new level of fun of driving.
+                </p>
+                <p class="ehev-body-text">
+                    The electric motor drives the vehicle for the entire speed range, and the internal combustion engine (ICE) is engaged only while cruising at high speed. This system achieves excellent fuel economy while offering the exhilarating and sophisticated fun of driving unique only to e:HEV, unattainable with an ICE-only system.
+                </p>
+                <div class="modes-grid" style="margin-top: 28px;">
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>Motor-First Driving</h4>
+                        <p>The electric motor drives the vehicle across the entire speed range, delivering instant torque and whisper-quiet refinement in every drive.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-leaf"></i></div>
+                        <h4>Outstanding Efficiency</h4>
+                        <p>By combining an efficient Atkinson cycle engine with two electric motors, e:HEV achieves fuel economy unattainable with a conventional engine alone.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. What is e:HEV System -->
+            <section class="ehev-panel" id="ehev-system">
+                <p class="ehev-panel-title">Image of e:HEV System</p>
+
+                <div class="comp-tabs" id="compTabs">
+                    <button class="comp-tab active" data-comp="1">â‘  Traction motor, Generator motor</button>
+                    <button class="comp-tab" data-comp="2">â‘¡ Atkinson cycle DOHC engine</button>
+                    <button class="comp-tab" data-comp="3">â‘¢ Lock-up clutch</button>
+                    <button class="comp-tab" data-comp="4">â‘£ Power Control Unit (PCU)</button>
+                    <button class="comp-tab" data-comp="5">â‘¤ Battery Pack</button>
+                </div>
+
+                <div class="comp-stage">
+                    <div class="comp-diagram">
+                        <img src="https://images.unsplash.com/photo-1572471275438-6eb23850b175?w=900&q=85" alt="e:HEV System Diagram">
+                        <div class="comp-callout" data-pos="motor">â‘  Traction motor, Generator motor</div>
+                        <div class="comp-callout" data-pos="engine">â‘¡ Atkinson cycle DOHC engine</div>
+                        <div class="comp-marker" data-mark="1">1</div>
+                        <div class="comp-marker" data-mark="2">2</div>
+                        <div class="comp-marker" data-mark="3">3</div>
+                        <div class="comp-marker" data-mark="4">4</div>
+                        <div class="comp-marker" data-mark="5">5</div>
+                    </div>
+
+                    <div class="comp-detail" id="compDetail">
+                        <div class="comp-detail-item active" data-comp="1">
+                            <div class="comp-detail-thumb"><i class="fas fa-cogs"></i></div>
+                            <div class="comp-detail-body">
+                                <h4>â‘  Traction motor, Generator motor</h4>
+                                <p>The Honda two-motor hybrid system consists of a traction motor and a generator motor, which efficiently convert engine output into electricity, supply power to drive the tires and charge the battery, while also regenerating electricity during deceleration. The traction motor uses a magnet which is free of heavy rare earth elements.</p>
+                            </div>
+                        </div>
+                        <div class="comp-detail-item" data-comp="2">
+                            <div class="comp-detail-thumb"><i class="fas fa-engine"></i></div>
+                            <div class="comp-detail-body">
+                                <h4>â‘¡ Atkinson cycle DOHC engine</h4>
+                                <p>This engine realizes a high-output Atkinson cycle with excellent thermal efficiency, converting every drop of fuel into maximum energy with minimal waste.</p>
+                            </div>
+                        </div>
+                        <div class="comp-detail-item" data-comp="3">
+                            <div class="comp-detail-thumb"><i class="fas fa-link"></i></div>
+                            <div class="comp-detail-body">
+                                <h4>â‘¢ Lock-up clutch</h4>
+                                <p>During high-speed cruising, the system shifts into "engine drive mode," where the engine output shaft is directly connected to the wheels. With gear ratios suitable for high-speed driving, equivalent to the top gear in a manual transmission, the simple power transmission path maximizes the highly efficient operation of the Atkinson cycle.</p>
+                            </div>
+                        </div>
+                        <div class="comp-detail-item" data-comp="4">
+                            <div class="comp-detail-thumb"><i class="fas fa-microchip"></i></div>
+                            <div class="comp-detail-body">
+                                <h4>â‘£ Power Control Unit (PCU)</h4>
+                                <p>The PCU consists of a power drive unit (PDU) that converts battery current to AC and a voltage control unit (VCU) that boosts the voltage to a maximum of 650V, based on the requirement by the traction motor. As a result of downsizing and an increase in efficient operation, the PCU fits inside the engine compartment.</p>
+                            </div>
+                        </div>
+                        <div class="comp-detail-item" data-comp="5">
+                            <div class="comp-detail-thumb"><i class="fas fa-battery-full"></i></div>
+                            <div class="comp-detail-body">
+                                <h4>â‘¤ Battery Pack</h4>
+                                <p>Power unit that combines lithium-ion batteries with an ECU for control, which efficiently stores and outputs electricity, contributing greatly to fuel efficiency and driving performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="ehev-disclaimer">The visuals in this content are for informational purposes only and do not represent any specific product or model.</p>
+            </section>
+
+            <!-- 3. How e:HEV Works -->
+            <section class="ehev-panel" id="how-works">
+                <h2 class="ehev-section-title">How e:HEV Works</h2>
+                <p class="ehev-section-sub">e:HEV Maintains its High Efficiency in All Driving Situations by Intelligently Switching Between Three Modes</p>
+
+                <div class="modes-grid">
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-charging-station"></i></div>
+                        <h4>EV drive mode</h4>
+                        <p>During startup acceleration and city driving, the vehicle runs on the motor alone, powered by electricity from the battery. Since the engine is off, the vehicle runs like a BEV, without using gasoline. The driver's operation of the accelerator pedal and motor power output are precisely controlled, ensuring a smooth and highly responsive driving experience.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h4>Hybrid drive mode</h4>
+                        <p>The vehicle runs on the motor alone using electricity generated by the engine. Electricity from the battery is also used to realize powerful acceleration. A linear acceleration feel is achieved by optimizing the balance between acceleration G in response to accelerator pedal operation and engine speed increase.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-road"></i></div>
+                        <h4>Engine drive mode</h4>
+                        <p>During high-speed cruising, which requires less driving force, engine drive mode is more efficient than running the motor at high speed. Engine output is directly connected to the driveshaft to reduce power loss.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-card-icon"><i class="fas fa-redo"></i></div>
+                        <h4>EV drive mode (Regenerative braking mode)</h4>
+                        <p>When decelerating or driving downhill, the tire rotation drives the traction motor to generate electricity, converting kinetic energy into electricity which is stored in the battery.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; padding: 28px; background: #f7f9fb; border-radius: 12px; border-left: 4px solid #0070c0;">
+                    <h4 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.2rem; margin-bottom: 12px; color: #1a1a1a;">Why an electric motor at low speed, an engine at high speed?</h4>
+                    <p style="color: #444; line-height: 1.85; font-size: 0.96rem;">
+                        An ICE can generate high output at high-rpm range, but has difficulty in generating large torque at low-speed range such as when the car starts moving from a stop. Due to this characteristic, the fuel economy of ICE vehicles is not very high in urban areas where frequent stops and starts are required. On the other hand, an electric motor can generate maximum torque from the low-speed range such as when the vehicle starts moving. By using an electric motor at low speed and an ICE at high speed, the hybrid-electric vehicle achieves high efficiency and thus high fuel economy.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 4. e:HEV Learning Videos -->
+            <section class="ehev-panel" id="videos">
+                <h2 class="ehev-section-title">e:HEV Learning Videos</h2>
+                <p class="ehev-section-sub">Watch and learn how Honda's hybrid technology works</p>
+
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=85" alt="What is e:HEV">
+                            <div class="video-play"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-info">
+                            <h4>What is e:HEV?</h4>
+                            <p>A quick introduction to Honda's original hybrid-electric system and the philosophy behind it.</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=85" alt="Two-motor system explained">
+                            <div class="video-play"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Two-Motor Hybrid System Explained</h4>
+                            <p>How the traction motor and generator motor work together to deliver efficiency and fun.</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1572471275438-6eb23850b175?w=600&q=85" alt="Three drive modes">
+                            <div class="video-play"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Three Intelligent Drive Modes</h4>
+                            <p>See how e:HEV seamlessly switches between EV, Hybrid, and Engine drive modes.</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=600&q=85" alt="e:HEV on the road">
+                            <div class="video-play"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-info">
+                            <h4>e:HEV on the Road</h4>
+                            <p>Experience the HR-V e:HEV in real-world driving conditions around Pakistan.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Difference e:HEV vs Others -->
+            <section class="ehev-panel" id="difference">
+                <h2 class="ehev-section-title">The Difference Between e:HEV and Other Types of Hybrid-electric Systems</h2>
+                <p class="ehev-section-sub">An intelligent hybrid unique to Honda â€” combining the best of series and parallel systems</p>
+
+                <div class="diff-grid">
+                    <div class="diff-card">
+                        <h4><i class="fas fa-exchange-alt"></i> Difference with a series-parallel hybrid system</h4>
+                        <p>While the series-parallel hybrid system adjusts the ratio of engine and motor drive according to driving conditions, the e:HEV uses efficient motor drive for most daily driving situations. There are two modes of motor drive: EV drive mode and Hybrid drive mode. The e:HEV realizes high-quality motor driving and excellent efficiency for both modes by featuring a simple structure without a complex power distribution mechanism.</p>
+                    </div>
+                    <div class="diff-card">
+                        <h4><i class="fas fa-project-diagram"></i> Difference with a series hybrid-electric system</h4>
+                        <p>With a series hybrid system, the engine generates electricity which is used by the electric motor which drives the vehicle for the entire speed range. Even during high-speed cruising, the motor, which is less effective than the engine, has to maintain high rpm, therefore, the engine must increase the amount of electricity generation. In contrast, during high-speed cruising, the e:HEV simply engages the engine directly to drive the vehicle. The vehicle drives with high quietness and fuel economy in the speed range where the engine is most efficient.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; padding: 28px; background: #fff; border: 1px solid #e3e5e8; border-radius: 12px;">
+                    <h4 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.2rem; margin-bottom: 14px; color: #0070c0;"><i class="fas fa-bolt" style="color: #e00521; margin-right: 8px;"></i>Single-motor vs Two-motor hybrid</h4>
+                    <p style="color: #444; line-height: 1.85; font-size: 0.96rem; margin-bottom: 14px;">
+                        A single-motor hybrid system uses one electric motor to assist the engine, primarily for regenerative braking and power boost. In contrast, a two-motor hybrid system, like Honda e:HEV, has two electric motors:
+                    </p>
+                    <ul style="color: #444; line-height: 1.9; padding-left: 22px; font-size: 0.96rem;">
+                        <li><strong>Drive Motor:</strong> Powers the wheels for better acceleration and efficiency.</li>
+                        <li><strong>Generator Motor:</strong> Converts engine power into electricity to charge the battery and assist the drive motor.</li>
+                    </ul>
+                    <p style="color: #444; line-height: 1.85; font-size: 0.96rem; margin-top: 14px;">
+                        Honda's two-motor e:HEV system provides smoother transitions, improved fuel efficiency, and better EV mode driving compared to a single-motor hybrid.
+                    </p>
+                </div>
+
+                <div style="margin-top: 24px; padding: 24px; background: #f7f9fb; border-radius: 12px;">
+                    <h4 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.15rem; margin-bottom: 12px; color: #1a1a1a;">e:HEV vs Plug-in Hybrid (PHEV)</h4>
+                    <div class="diff-grid" style="margin-top: 0;">
+                        <div style="padding: 16px; background: #fff; border-radius: 8px; border-left: 3px solid #0070c0;">
+                            <strong style="color: #0070c0; display: block; margin-bottom: 6px;">Honda e:HEV</strong>
+                            <span style="color: #555; font-size: 0.94rem;">Self-charging â€” does not need to be plugged in. Charges itself through the engine and regenerative braking.</span>
+                        </div>
+                        <div style="padding: 16px; background: #fff; border-radius: 8px; border-left: 3px solid #999;">
+                            <strong style="color: #666; display: block; margin-bottom: 6px;">Plug-in Hybrid (PHEV)</strong>
+                            <span style="color: #555; font-size: 0.94rem;">Requires external charging and can drive longer on electric power, but needs access to charging infrastructure.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Customer Voice -->
+            <section class="ehev-panel" id="voice">
+                <h2 class="ehev-section-title">Customer Voice</h2>
+                <p class="ehev-section-sub">Hear from real Honda e:HEV owners</p>
+
+                <div class="voice-grid">
+                    <div class="voice-card">
+                        <div class="voice-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="voice-text">The fuel economy is unbelievable. I'm getting nearly double the mileage I used to get with my old sedan, and the car is so quiet in city driving â€” it feels like an EV.</p>
+                        <div class="voice-author">
+                            <div class="voice-avatar">AK</div>
+                            <div class="voice-meta">
+                                <strong>Adnan Khan</strong>
+                                <span>HR-V e:HEV Owner, Haripur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voice-card">
+                        <div class="voice-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="voice-text">I was worried about hybrid reliability, but Honda's system is incredibly smooth. The transition between modes is seamless â€” you barely notice it switching from motor to engine.</p>
+                        <div class="voice-author">
+                            <div class="voice-avatar">SR</div>
+                            <div class="voice-meta">
+                                <strong>Sana Riaz</strong>
+                                <span>HR-V e:HEV Owner, Islamabad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voice-card">
+                        <div class="voice-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="voice-text">Instant torque from the motor makes city driving so much more enjoyable. Overtaking is effortless, and on the motorway the engine takes over perfectly. Best of both worlds.</p>
+                        <div class="voice-author">
+                            <div class="voice-avatar">MU</div>
+                            <div class="voice-meta">
+                                <strong>Muhammad Usman</strong>
+                                <span>HR-V e:HEV Owner, Haripur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Subscribe -->
+            <section class="ehev-panel" id="subscribe">
+                <h2 class="ehev-section-title">Subscribe</h2>
+                <p class="ehev-section-sub">Stay updated with the latest Honda e:HEV news and offers</p>
+
+                <div class="subscribe-box">
+                    <h3>Join the e:HEV Community</h3>
+                    <p>Get the latest hybrid technology updates, exclusive offers, and event invitations from Honda Haripur.</p>
+                    <form class="subscribe-form" id="ehevSubscribe">
+                        <input type="email" required placeholder="Enter your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- 8. FAQs -->
+            <section class="ehev-panel ehev-faq" id="faqs">
+                <h2 class="ehev-section-title">FAQs</h2>
+                <p class="ehev-section-sub">Frequently asked questions about Honda e:HEV</p>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is a Hybrid Electric Vehicle (HEV)? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">A hybrid-electric vehicle (HEV) is equipped with electric motors in addition to an engine and achieves excellent fuel economy by efficiently using those two power sources.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does an e:HEV work? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">The e:HEV hybrid-electric system was created by combining all of the engine and electrification technologies Honda has amassed to date, adopting a host of new technologies to achieve overwhelmingly high fuel economy and a new level of fun of driving.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the difference between a single-motor and a two-motor hybrid system? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        A single-motor hybrid system uses one electric motor to assist the engine, primarily for regenerative braking and power boost. In contrast, a two-motor hybrid system, like Honda e:HEV, has two electric motors:
+                        <ul>
+                            <li><strong>Drive Motor:</strong> Powers the wheels for better acceleration and efficiency.</li>
+                            <li><strong>Generator Motor:</strong> Converts engine power into electricity to charge the battery and assist the drive motor.</li>
+                        </ul>
+                        Honda's two-motor e:HEV system provides smoother transitions, improved fuel efficiency, and better EV mode driving compared to a single-motor hybrid.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does regenerative braking work? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">When decelerating, the system converts the energy generated from deceleration into electrical energy and recharges it back to the battery.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are the three different drive modes of Honda e:HEV? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        Honda e:HEV works in three driving modes:
+                        <ul>
+                            <li><strong>EV Mode:</strong> Runs purely on electric power for short distances.</li>
+                            <li><strong>Hybrid Mode:</strong> Uses both the petrol engine and electric motor for efficiency and powerful acceleration.</li>
+                            <li><strong>Engine Mode:</strong> During high-speed cruising, engine drive mode is more efficient than motor. Engine output is directly connected to drive shaft to reduce power loss.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does the Honda e:HEV transmission work? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        Honda e:HEV uses e-CVT, which is different from a traditional CVT. Instead of pulleys and belts, it uses two electric motors (generator and drive motor) to regulate power flow, resulting in:
+                        <ul>
+                            <li>No gear shifts or lag like in traditional automatics.</li>
+                            <li>Instant acceleration from the electric motor.</li>
+                            <li>Smooth and quiet operation, especially in city driving.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is Honda e:HEV fun to drive? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes! Since the electric motor delivers instant torque, the car feels quick in acceleration, smooth and quiet at low speeds, and more stable overall.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the difference between Honda e:HEV and a Plug-in Hybrid (PHEV)? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>Honda e:HEV is self-charging and does not need to be plugged in.</li>
+                            <li>PHEVs require external charging and can drive longer on electric power.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does Honda e:HEV improve driving performance? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Honda e:HEV provides instant torque from the electric motor for quick acceleration, and seamless transition between power modes for a smooth drive.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How is Honda e:HEV better than other hybrid systems? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Honda e:HEV stands out from other hybrid systems due to its unique two-motor hybrid setup, intelligent energy management, and better fuel efficiency.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What does 'e' stand for in e:HEV? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">'e' in e:HEV represents an experience close to electric drive, offering smooth, quiet, and efficient performance.</div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- CTA to full e:HEV page -->
+    <section class="section" style="background: #f5f6f8; text-align: center; padding-top: 40px; padding-bottom: 60px;">
+        <div class="container">
+            <h2 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 10px;">Experience e:HEV Yourself</h2>
+            <p style="color: #666; margin-bottom: 24px;">Book a test drive of the Honda HR-V e:HEV at Honda Haripur</p>
+            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+                <a href="hrv.html" class="btn btn-red">Discover HR-V e:HEV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section" style="background: linear-gradient(135deg, var(--honda-red) 0%, var(--honda-red-dark) 100%);">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15K+</h3>
+                    <p>Cars Sold</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50K+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2S</h3>
+                    <p>Sales, Service & Spare Parts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Dealer Network -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dealer Network</h2>
+                <p>Honda Haripur - Your trusted 2S authorised dealership</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>2S Dealers</h4>
+                    <p>Sales, Service & Spare Parts all under one roof for complete convenience.</p>
+                    <a href="contact.html" class="card-link">Find Dealer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Delivery Status</h4>
+                    <p>Check the delivery status of your newly booked Honda vehicle.</p>
+                    <a href="salesservice.html" class="card-link">Check Status <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wrench"></i>
+                    <h4>Free Service</h4>
+                    <p>Schedule your free service appointment at Honda Haripur service center.</p>
+                    <a href="salesservice.html" class="card-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>Online Booking</h4>
+                    <p>Book your favorite Honda model online with easy financing options.</p>
+                    <a href="contact.html" class="card-link">Book Online <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+                <p>Sales, service, and certified vehicles at Honda Haripur</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="Honda Service">
+                    <div class="news-card-content">
+                        <div class="news-date">After-Sales</div>
+                        <h4>Authorised Sales &amp; Service Centre</h4>
+                        <p>Certified technicians, genuine parts, and complete after-sales care at our Haripur facility.</p>
+                        <a href="salesservice.html" class="read-more">Explore Services <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=600&q=80" alt="HR-V eHEV">
+                    <div class="news-card-content">
+                        <div class="news-date">Hybrid Technology</div>
+                        <h4>Honda HR-V e:HEV - Pakistan's Hybrid SUV</h4>
+                        <p>Honda Atlas brings the HR-V e:HEV to Pakistan, marking a new era of hybrid innovation.</p>
+                        <a href="hrv.html" class="read-more">Discover HR-V <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1761315087712-4b1bd53ce39b?w=600&q=80" alt="Honda Civic">
+                    <div class="news-card-content">
+                        <div class="news-date">New Bookings</div>
+                        <h4>Book Your New Honda Civic Today</h4>
+                        <p>Reserve the all-new Honda Civic with exclusive booking benefits and flexible financing options.</p>
+                        <a href="civic.html" class="read-more">View Civic <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about Honda vehicles</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        What is a Hybrid Electric Vehicle (HEV)?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        A hybrid-electric vehicle (HEV) is equipped with electric motors in addition to an engine and achieves excellent fuel economy by efficiently using those two power sources.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How does an e:HEV work?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The e:HEV hybrid-electric system was created by combining all of the engine and electrification technologies Honda has amassed. It intelligently switches between three modes: EV drive, Hybrid drive, and Engine drive for optimal efficiency.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are the available financing options?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Honda Haripur offers financing through Meezan Bank, HBL Dream Honda, and other leading banks with competitive markup rates and flexible repayment plans.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I book a test drive at Honda Haripur?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can book a test drive by calling us directly at +92 300 1234567, or visit our showroom on Main GT Road, Haripur.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Does Honda Haripur provide after-sales service?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, as a 2S authorised dealership, Honda Haripur provides complete after-sales service including scheduled maintenance, repairs, and genuine Honda spare parts.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/honda-icon.png" alt="Honda Haripur" class="logo-img" style="height: 46px;"><span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+                    </a>
+                    <p>Your trusted Authorised 2S Honda Dealership in Haripur. Sales, Service, and Spare Parts - all under one roof.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Model Line</h4>
+                    <ul>
+                        <li><a href="civic.html">Honda Civic</a></li>
+                        <li><a href="hrv.html">Honda HR-V</a></li>
+                        <li><a href="city.html">Honda City</a></li>
+                        <li><a href="civic.html">Civic RS</a></li>
+                        <li><a href="hrv.html">HR-V e:HEV</a></li>
+                        <li><a href="ehev.html">e:HEV Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                    <li><a href="aftersales.html">After Sales</a></li>
+                        <li><a href="parts.html">Genuine Parts</a></li>
+                        <li><a href="tracker.html">Vehicle Tracker</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="https://global.honda/en/" target="_blank">Global Honda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--honda-red); margin-right: 8px;"></i> Main GT Road, Haripur</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 300 1234567</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 995 123456</li>
+                        <li><i class="fas fa-envelope" style="color: var(--honda-red); margin-right: 8px;"></i> info@hondaharipur.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 Â© Honda Haripur - Authorised 2S Dealership</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <a href="https://wa.me/923001234567" class="wa-fab wa-fab-left" target="_blank" rel="noopener" aria-label="WhatsApp For Sale" title="WhatsApp For Sale"><i class="fab fa-whatsapp"></i><span class="wa-tag">SALE</span></a>
+    <a href="https://wa.me/92995123456" class="wa-fab wa-fab-right" target="_blank" rel="noopener" aria-label="WhatsApp After Sales" title="WhatsApp After Sales"><i class="fab fa-whatsapp"></i><span class="wa-tag">AFTER SALE</span></a>
+
+    <script src="js/main.js"></script>
+    <script src="js/ehev.js"></script>
+</body>
+</html>

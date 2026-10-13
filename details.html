@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - Honda Haripur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sticky-top">
+    <div class="top-bar">
+        <div class="container">
+
+            <a href="tel:+923001234567" class="tb-call tb-call-sale" aria-label="Call For Sale" title="For Sale: +92 300 1234567"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">For Sale:</span> +92 300 1234567</a>
+            <a href="tel:+92995123456" class="tb-call" aria-label="Call After Sale" title="After Sale: +92 995 123456"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">After Sale:</span> +92 995 123456</a>
+        </div>
+    </div>
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/honda-icon.png" alt="Honda Haripur" class="logo-img" style="height: 46px;"><span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+            </a>
+            <nav id="nav">
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="tracker.html">Tracker</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="dealer-section">
+        <div class="ds-inner"><img src="images/honda-icon.png" alt="Honda" class="badge-h"> <span class="ds-text">Authorised 2S Dealership</span></div>
+    </section>
+    <div class="quick-bar">
+        <div class="container">
+            <a href="index.html#models" class="quick-btn"><i class="fas fa-car"></i> Sales</a>
+            <a href="aftersales.html" class="quick-btn"><i class="fas fa-tools"></i> After Sales</a>
+            <a href="parts.html" class="quick-btn"><i class="fas fa-cogs"></i> Spare Parts</a>
+        </div>
+    </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="page-banner" style="background: linear-gradient(135deg, #17070b 0%, #45101a 100%);">
+        <div class="container">
+            <h1 id="dTitle">Car Details</h1>
+            <p id="dSubtitle">Full specifications and features</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <a href="index.html#models">Sales</a> <span>/</span> <span id="dBreadcrumb">Details</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="detailRoot">
+                <div class="model-card-main" style="margin-bottom: 28px;">
+                    <div class="model-card-image">
+                        <img id="dImage" src="images/honda-icon.png" alt="Honda">
+                    </div>
+                    <div class="model-card-info">
+                        <span class="model-badge" id="dBadge">Variant</span>
+                        <h3 id="dName">Loading...</h3>
+                        <div class="model-price" id="dPrice"></div>
+                        <div class="model-price-note" id="dPriceNote" hidden>*For detailed price kindly use price calculator</div>
+                        <p class="model-desc" id="dDesc"></p>
+                        <div class="model-card-actions">
+                            <a id="dInquiry" href="contact.html" class="btn btn-red">Submit Inquiry</a>
+                            <a href="index.html#models" class="btn btn-outline-red">Back to Models</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="model-details open" style="margin-top: 0;">
+                    <h4 id="dSpecsHeading">Full Specifications</h4>
+                    <div class="details-grid">
+                        <div class="details-col">
+                            <h5>Engine &amp; Transmission</h5>
+                            <ul class="details-list" id="dSpecs"></ul>
+                        </div>
+                        <div class="details-col">
+                            <h5>Key Features</h5>
+                            <ul class="details-feats" id="dFeatures"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="dNotFound" hidden style="text-align:center;padding:40px 0;">Car not found. <a href="index.html#models">View all models</a></p>
+        </div>
+    </section>
+
+    <section class="cta-section" style="background: linear-gradient(135deg, var(--honda-red), var(--honda-red-dark)); padding: 50px 0; text-align: center; color: white;">
+        <div class="container">
+            <h2 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.8rem; margin-bottom: 12px;">Interested in this Honda?</h2>
+            <p style="margin-bottom: 22px; opacity: 0.9;">Contact our sales team for booking, test drive, and financing options.</p>
+            <a id="dCtaInquiry" href="contact.html" class="btn btn-outline-white">Contact Sales</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/honda-icon.png" alt="Honda Haripur" class="logo-img" style="height: 46px;"><span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+                    </a>
+                    <p>Your trusted Authorised 2S Honda Dealership in Haripur. Sales, Service, and Spare Parts - all under one roof.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Model Line</h4>
+                    <ul>
+                        <li><a href="civic.html">Honda Civic</a></li>
+                        <li><a href="hrv.html">Honda HR-V</a></li>
+                        <li><a href="city.html">Honda City</a></li>
+                        <li><a href="civic.html">Civic RS</a></li>
+                        <li><a href="hrv.html">HR-V e:HEV</a></li>
+                        <li><a href="ehev.html">e:HEV Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                        <li><a href="aftersales.html">After Sales</a></li>
+                        <li><a href="parts.html">Genuine Parts</a></li>
+                        <li><a href="tracker.html">Vehicle Tracker</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="https://global.honda/en/" target="_blank">Global Honda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--honda-red); margin-right: 8px;"></i> Main GT Road, Haripur</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 300 1234567</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 995 123456</li>
+                        <li><i class="fas fa-envelope" style="color: var(--honda-red); margin-right: 8px;"></i> info@hondaharipur.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 Ã‚Â© Honda Haripur - Authorised 2S Dealership</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <a href="https://wa.me/923001234567" class="wa-fab wa-fab-left" target="_blank" rel="noopener" aria-label="WhatsApp For Sale" title="WhatsApp For Sale"><i class="fab fa-whatsapp"></i><span class="wa-tag">SALE</span></a>
+    <a href="https://wa.me/92995123456" class="wa-fab wa-fab-right" target="_blank" rel="noopener" aria-label="WhatsApp After Sales" title="WhatsApp After Sales"><i class="fab fa-whatsapp"></i><span class="wa-tag">AFTER SALE</span></a>
+    <script src="js/main.js"></script>
+    <script>
+    (function() {
+        var cars = {
+            'honda civic standard': {
+                name: 'Honda Civic Standard',
+                badge: 'Standard',
+                price: 'PKR 8,499,000',
+                image: 'https://images.unsplash.com/photo-1761315087712-4b1bd53ce39b?w=800&q=85',
+                desc: 'Experience the perfect blend of performance and efficiency with the Civic Standard. Featuring Honda Sensing technology, turbocharged engine, and premium interior comfort.',
+                specs: [
+                    ['Engine', '1.5L VTEC Turbo'],
+                    ['Transmission', 'CVT Automatic'],
+                    ['Power', '182 HP / 240 Nm'],
+                    ['Fuel Economy', '12-14 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'Honda Sensing ADAS suite',
+                    'LED headlights with auto levelling',
+                    '8-inch touchscreen infotainment',
+                    'Push start with smart key',
+                    'Dual-zone climate control',
+                    '6 airbags + ABS + EBD',
+                    'Hill start assist',
+                    'Rear parking camera'
+                ]
+            },
+            'honda civic oriel': {
+                name: 'Honda Civic Oriel',
+                badge: 'Oriel',
+                price: 'PKR 8,834,000',
+                image: 'https://images.unsplash.com/photo-1773065083527-dc06cc1f04fe?w=800&q=85',
+                desc: 'Elevate your drive with the Civic Oriel. Premium sunroof, leather-appointed seats, and advanced infotainment system for the discerning driver.',
+                specs: [
+                    ['Engine', '1.5L VTEC Turbo'],
+                    ['Transmission', 'CVT Automatic'],
+                    ['Power', '182 HP / 240 Nm'],
+                    ['Fuel Economy', '12-14 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'Everything in Standard, plus:',
+                    'Electric sunroof',
+                    'Leather-appointed seats',
+                    '9-inch HD infotainment with navigation',
+                    'Wireless Apple CarPlay / Android Auto',
+                    'Wireless phone charger',
+                    'Paddle shifters',
+                    'LED fog lamps'
+                ]
+            },
+            'honda civic rs turbo': {
+                name: 'Honda Civic RS Turbo',
+                badge: 'RS Turbo',
+                price: 'PKR 10,100,000',
+                image: 'https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=800&q=85',
+                desc: 'The pinnacle of Civic performance. Turbocharged 1.5L VTEC engine, sport-tuned suspension, and exclusive RS exterior styling elements.',
+                specs: [
+                    ['Engine', '1.5L VTEC Turbo (RS)'],
+                    ['Transmission', 'CVT with Sport Mode'],
+                    ['Power', '182 HP / 240 Nm'],
+                    ['Fuel Economy', '11-13 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'RS-exclusive sport exterior body kit',
+                    '18-inch alloy wheels',
+                    'Sport-tuned suspension',
+                    'Red ambient interior lighting',
+                    'Bose premium 12-speaker audio',
+                    'Full Honda Sensing suite',
+                    'Heated front seats',
+                    'Digital driver display'
+                ]
+            },
+            'honda hrv vtis': {
+                name: 'Honda HR-V VTI-S',
+                badge: 'VTI-S',
+                price: 'PKR 7,299,000',
+                image: 'https://images.unsplash.com/photo-1572471275438-6eb23850b175?w=800&q=85',
+                desc: 'Versatile and stylish compact SUV. Honda Sensing safety suite, Magic Seats for ultimate cargo flexibility, and responsive driving dynamics.',
+                specs: [
+                    ['Engine', '1.5L i-VTEC'],
+                    ['Transmission', 'CVT Automatic'],
+                    ['Power', '121 HP / 145 Nm'],
+                    ['Fuel Economy', '14-16 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'Honda Sensing safety suite',
+                    'Magic Seats (fold-up cargo modes)',
+                    'LED headlights and taillights',
+                    '8-inch Display Audio system',
+                    'Push start with smart key',
+                    'Dual-zone climate control',
+                    '6 airbags with ABS + EBD',
+                    'Hill descent control'
+                ]
+            },
+            'honda hrv ehev': {
+                name: 'Honda HR-V e:HEV',
+                badge: 'e:HEV Hybrid',
+                price: 'PKR 9,299,000',
+                image: 'https://images.unsplash.com/photo-1707070182914-fb69f596c98e?w=800&q=85',
+                desc: 'Experience the future of driving with Honda\'s advanced hybrid technology. Two-motor system delivers exceptional fuel economy without compromising performance.',
+                specs: [
+                    ['Engine', '1.5L Hybrid + 2 Electric Motors'],
+                    ['Transmission', 'e-CVT Hybrid'],
+                    ['Power', '129 HP combined'],
+                    ['Fuel Economy', '18-22 km/L (hybrid)'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol + Electric Hybrid'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '8 Years / 160,000 km (battery)']
+                ],
+                features: [
+                    'Two-motor hybrid powertrain',
+                    'EV / Hybrid / Engine drive modes',
+                    'Regenerative braking',
+                    'Honda Sensing ADAS suite',
+                    '9-inch HD infotainment',
+                    'Wireless Apple CarPlay / Android Auto',
+                    'Panoramic glass roof',
+                    'Hands-free power tailgate'
+                ]
+            },
+            'honda city 1.2ls': {
+                name: 'Honda City 1.2LS',
+                badge: '1.2LS',
+                price: 'PKR 4,737,000',
+                image: 'https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85',
+                desc: 'The perfect entry to the Honda family. Fuel-efficient 1.2L engine, comfortable interior, and legendary Honda reliability at an accessible price.',
+                specs: [
+                    ['Engine', '1.2L i-VTEC'],
+                    ['Transmission', 'CVT Automatic'],
+                    ['Power', '90 HP / 110 Nm'],
+                    ['Fuel Economy', '16-18 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'Fuel-efficient 1.2L engine',
+                    'CVT automatic transmission',
+                    'Power steering with tilt adjustment',
+                    'Front power windows',
+                    'Dual airbags + ABS',
+                    'Rear parking sensors',
+                    'Audio system with Bluetooth',
+                    'ECO driving indicator'
+                ]
+            },
+            'honda city aspire 1.5las': {
+                name: 'Honda City Aspire 1.5LAS',
+                badge: 'Aspire 1.5LAS',
+                price: 'PKR 6,069,000',
+                image: 'https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85',
+                desc: 'Step up to the Aspire with its more powerful 1.5L engine, enhanced features, and premium styling that turns heads on every road.',
+                specs: [
+                    ['Engine', '1.5L i-VTEC'],
+                    ['Transmission', 'CVT Automatic'],
+                    ['Power', '121 HP / 145 Nm'],
+                    ['Fuel Economy', '14-16 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'More powerful 1.5L engine',
+                    'LED headlights',
+                    'Push start with smart key',
+                    '8-inch touchscreen infotainment',
+                    'Rear camera',
+                    'Cruise control',
+                    'Alloy wheels',
+                    'Fog lamps'
+                ]
+            },
+            'honda city aspire s 1.5las cvt': {
+                name: 'Honda City Aspire S 1.5LAS CVT',
+                badge: 'Aspire S 1.5LAS',
+                price: 'PKR 6,149,000',
+                image: 'https://images.unsplash.com/photo-1609676671207-d021525a635d?w=800&q=85',
+                desc: 'The top-of-the-line City variant with CVT transmission, Honda Sensing, sunroof, and the most advanced features in its class.',
+                specs: [
+                    ['Engine', '1.5L i-VTEC'],
+                    ['Transmission', 'CVT with Sport Mode'],
+                    ['Power', '121 HP / 145 Nm'],
+                    ['Fuel Economy', '14-15 km/L'],
+                    ['Drive', 'FWD'],
+                    ['Fuel Type', 'Petrol'],
+                    ['Seating', '5 Persons'],
+                    ['Warranty', '3 Years / 100,000 km']
+                ],
+                features: [
+                    'Honda Sensing ADAS suite',
+                    'Electric sunroof',
+                    'Leather-appointed seats',
+                    '9-inch HD infotainment',
+                    'Wireless Apple CarPlay / Android Auto',
+                    'Paddle shifters',
+                    'LED fog lamps + signature LEDs',
+                    '6 airbags with side curtain'
+                ]
+            }
+        };
+
+        var q = new URLSearchParams(location.search);
+        var car = (q.get('car') || '').trim().toLowerCase();
+        var data = cars[car];
+        var root = document.getElementById('detailRoot');
+        var notFound = document.getElementById('dNotFound');
+
+        if (!data) {
+            if (root) root.hidden = true;
+            if (notFound) notFound.hidden = false;
+            document.title = 'Car Details - Honda Haripur';
+            return;
+        }
+
+        document.title = data.name + ' - Full Details | Honda Haripur';
+        document.getElementById('dTitle').textContent = data.name;
+        document.getElementById('dSubtitle').textContent = 'Full specifications, features and pricing';
+        document.getElementById('dBreadcrumb').textContent = data.name;
+        document.getElementById('dBadge').textContent = data.badge;
+        document.getElementById('dName').textContent = data.name;
+        document.getElementById('dPrice').textContent = data.price;
+        document.getElementById('dDesc').textContent = data.desc;
+        document.getElementById('dSpecsHeading').textContent = data.name + ' - Full Specifications';
+        var img = document.getElementById('dImage');
+        img.src = data.image;
+        img.alt = data.name;
+
+        var inquiry = 'contact.html?car=' + encodeURIComponent(data.name) + '&price=' + encodeURIComponent(data.price);
+        document.getElementById('dInquiry').href = inquiry;
+        document.getElementById('dCtaInquiry').href = inquiry;
+
+        var specs = document.getElementById('dSpecs');
+        data.specs.forEach(function(row) {
+            var li = document.createElement('li');
+            li.innerHTML = '<span class="dk"></span><span class="dv"></span>';
+            li.querySelector('.dk').textContent = row[0];
+            li.querySelector('.dv').textContent = row[1];
+            specs.appendChild(li);
+        });
+
+        var feats = document.getElementById('dFeatures');
+        data.features.forEach(function(f) {
+            var li = document.createElement('li');
+            li.textContent = f;
+            feats.appendChild(li);
+        });
+    })();
+    </script>
+</body>
+</html>
