@@ -2101,7 +2101,7 @@ footer {
     }
 }
 
-/* ===== Honda Haripur theme (same palette, subtle variation) ===== */
+/* Honda Haripur: white logo text on dark header/footer */
 header .logo-text,
 footer .logo-text {
     color: #ffffff;
@@ -2109,22 +2109,4 @@ footer .logo-text {
 header .logo-text span,
 footer .logo-text span {
     color: rgba(255, 255, 255, 0.55);
-}
-.btn {
-    border-radius: 6px;
-}
-.btn-red {
-    box-shadow: 0 4px 14px rgba(228, 5, 33, 0.28);
-}
-.card, .model-card, .feature-card {
-    border-radius: 12px;
-}
-.top-bar {
-    background: linear-gradient(90deg, #0d0d0d 0%, #1c0a0e 100%);
-}
-.quick-bar {
-    border-bottom: 3px solid var(--honda-red);
-}
-.model-card:hover {
-    transform: translateY(-6px);
 }
