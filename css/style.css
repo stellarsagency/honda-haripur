@@ -1439,3 +1439,118 @@ li.has-dropdown:hover .dropdown-menu, li.has-dropdown.open .dropdown-menu { opac
 .hero-slide-content .btn-outline-white::before { background: var(--sumi); }
 .hero-slide-content .btn-outline-white:hover { color: var(--washi); border-color: var(--sumi); }
 .hero-slide-content .btn-outline-white:hover i { color: var(--washi); }
+
+/* ═══ Hero v2 — full-bleed cinematic ═══ */
+.hero-banner { height: 94vh; background: var(--sumi); }
+.hero-slide { display: block; position: relative; }
+.hero-slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; order: unset; }
+
+.hero-overlay {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(105deg, rgba(14,14,14,0.88) 0%, rgba(14,14,14,0.55) 42%, rgba(14,14,14,0.12) 72%, rgba(14,14,14,0.35) 100%),
+                linear-gradient(180deg, rgba(14,14,14,0.5) 0%, transparent 28%, transparent 62%, rgba(14,14,14,0.7) 100%);
+}
+
+.hero-slide::after {
+    content: '本 田';
+    position: absolute;
+    right: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 4.4rem);
+    font-weight: 600;
+    letter-spacing: 0.45em;
+    color: rgba(244, 240, 232, 0.16);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.hero-slide-content {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px 0 max(40px, calc((100% - 1200px) / 2 + 40px));
+    max-width: none;
+    background: none;
+    color: var(--washi);
+}
+
+.hero-slide-content::before {
+    top: auto;
+    bottom: 56px;
+    left: max(40px, calc((100% - 1200px) / 2 + 40px));
+    width: 56px;
+    background: var(--kincha);
+}
+
+.hero-slide-content .badge {
+    color: var(--kincha);
+    background: rgba(20, 20, 20, 0.35);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(184, 160, 106, 0.45);
+    padding: 8px 18px;
+    letter-spacing: 0.36em;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.hero-slide-content h1 {
+    color: var(--washi);
+    font-size: clamp(3rem, 6.4vw, 5.6rem);
+    font-weight: 700;
+    line-height: 1.02;
+    text-shadow: 0 4px 40px rgba(0, 0, 0, 0.45);
+    margin-bottom: 22px;
+}
+
+.hero-slide-content p {
+    color: rgba(244, 240, 232, 0.72);
+    font-size: 1.08rem;
+    font-weight: 300;
+    max-width: 440px;
+    margin-bottom: 14px;
+}
+
+.hero-slide-content .price {
+    color: var(--kincha-light);
+    font-size: 1.7rem;
+    margin-bottom: 38px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-slide-content .price span { color: rgba(244, 240, 232, 0.4); }
+
+.hero-slide-content .btn { border-color: rgba(244, 240, 232, 0.5); color: var(--washi); }
+.hero-slide-content .btn::before { background: var(--washi); }
+.hero-slide-content .btn:hover { color: var(--sumi); border-color: var(--washi); }
+.hero-slide-content .btn:hover i { color: var(--sumi); }
+.hero-slide-content .btn-red { background: var(--honda-red); border-color: var(--honda-red); color: #fff; }
+.hero-slide-content .btn-red::before { background: var(--washi); }
+.hero-slide-content .btn-red:hover { color: var(--sumi); border-color: var(--washi); }
+
+.hero-arrow { background: rgba(20, 20, 20, 0.4); border-color: rgba(244, 240, 232, 0.25); color: var(--washi); backdrop-filter: blur(8px); }
+.hero-arrow:hover { background: var(--kincha); color: var(--sumi); border-color: var(--kincha); }
+.hero-nav { left: max(40px, calc((100% - 1200px) / 2 + 40px)); bottom: 36px; }
+.hero-dot { background: rgba(244, 240, 232, 0.3); }
+.hero-dot.active { background: var(--kincha); }
+
+/* ── Hero v2 mobile ── */
+@media (max-width: 768px) {
+    .hero-banner { height: 82vh; min-height: 540px; }
+    .hero-slide img { order: unset; height: auto; min-height: 0; }
+    .hero-slide-content { padding: 0 24px; justify-content: flex-end; padding-bottom: 96px; }
+    .hero-slide-content h1 { font-size: clamp(2.2rem, 9vw, 3rem); }
+    .hero-slide-content p { font-size: 0.92rem; }
+    .hero-slide::after { right: 18px; font-size: 2rem; opacity: 0.7; }
+    .hero-slide-content::before { left: 24px; bottom: 40px; }
+    .hero-nav { left: 24px; bottom: 20px; }
+}
