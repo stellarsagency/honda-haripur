@@ -38,6 +38,7 @@
                         <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <a href="contact.html" class="btn btn-red header-cta">Book Test Drive</a>
             <button class="mobile-toggle" id="mobileToggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -112,6 +113,28 @@
         </div>
     </section>
 
+    <!-- Marquee Ticker -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span class="ticker-group">
+                <span>Authorised 2S Dealership</span><i class="fas fa-diamond"></i>
+                <span>100% Genuine Honda Parts</span><i class="fas fa-diamond"></i>
+                <span>Certified Technicians</span><i class="fas fa-diamond"></i>
+                <span>Flexible Financing</span><i class="fas fa-diamond"></i>
+                <span>Free Service Warranty</span><i class="fas fa-diamond"></i>
+                <span>Main GT Road, Haripur</span><i class="fas fa-diamond"></i>
+            </span>
+            <span class="ticker-group">
+                <span>Authorised 2S Dealership</span><i class="fas fa-diamond"></i>
+                <span>100% Genuine Honda Parts</span><i class="fas fa-diamond"></i>
+                <span>Certified Technicians</span><i class="fas fa-diamond"></i>
+                <span>Flexible Financing</span><i class="fas fa-diamond"></i>
+                <span>Free Service Warranty</span><i class="fas fa-diamond"></i>
+                <span>Main GT Road, Haripur</span><i class="fas fa-diamond"></i>
+            </span>
+        </div>
+    </div>
+
     <!-- Brand Statement -->
     <section class="brand-statement">
         <div class="container">
@@ -137,12 +160,16 @@
                 <p>Explore our complete range of Honda vehicles available at Honda Haripur</p>
             </div>
 
-            <!-- Model Tabs -->
-            <div class="model-tabs">
-                <button class="model-tab active" data-model="civic">Civic</button>
-                <button class="model-tab" data-model="hrv">HR-V</button>
-                <button class="model-tab" data-model="city">City</button>
-            </div>
+            <div class="model-split">
+            <aside class="model-rail">
+                <span class="rail-label">The Lineup</span>
+                <div class="model-tabs">
+                    <button class="model-tab active" data-model="civic"><span class="mt-num">01</span> Civic</button>
+                    <button class="model-tab" data-model="hrv"><span class="mt-num">02</span> HR-V</button>
+                    <button class="model-tab" data-model="city"><span class="mt-num">03</span> City</button>
+                </div>
+            </aside>
+            <div class="model-panels">
 
             <!-- Civic Variants -->
             <div class="model-display active" id="civic">
@@ -321,35 +348,47 @@
                 </div>
                 </div>
             </div>
+            </div>
+            </div>
         </div>
     </section>
 
-    <!-- Sales, After Sales & Spare Parts -->
-    <section class="section" style="background: var(--honda-light);">
+    <!-- Sales, After Sales & Spare Parts — editorial rows -->
+    <section class="section section-services">
         <div class="container">
             <div class="section-header">
-                <h2>Sales, After Sales &amp; Spare Parts</h2>
-                <p>Your trusted Authorised 2S Dealership in Haripur - everything for your Honda under one roof.</p>
+                <span class="sec-kicker">Under One Roof</span>
+                <h2>One Roof. Every Need.</h2>
+                <p>Sales, After Sales &amp; Spare Parts — your authorised 2S dealership in Haripur</p>
             </div>
-            <div class="grid-3 service-trio" style="gap: 30px;">
-                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
-                    <i class="fas fa-car" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
-                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Sales</h4>
-                    <p style="margin-bottom: 18px;">Explore the latest Honda models with flexible financing options and expert buying guidance.</p>
-                    <a href="#models" class="read-more">View Models <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
-                    <i class="fas fa-screwdriver-wrench" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
-                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">After Sales</h4>
-                    <p style="margin-bottom: 18px;">Expert engine service, scheduled maintenance and repairs to keep your Honda running at its best.</p>
-                    <a href="aftersales.html" class="read-more">View After Sales <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="feature-card" style="text-align: center; padding: 40px 30px;">
-                    <i class="fas fa-cogs" style="font-size: 40px; color: var(--honda-red); margin-bottom: 18px;"></i>
-                    <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Spare Parts</h4>
-                    <p style="margin-bottom: 18px;">100% genuine Honda spare parts with full warranty, available over the counter.</p>
-                    <a href="parts.html" class="read-more">View Parts <i class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="service-rows">
+                <a href="#models" class="service-row">
+                    <span class="sr-num">01</span>
+                    <span class="sr-icon"><i class="fas fa-car"></i></span>
+                    <span class="sr-body">
+                        <strong>Sales</strong>
+                        <span class="sr-desc">Explore the latest Honda models with flexible financing options and expert buying guidance.</span>
+                    </span>
+                    <span class="sr-cta">View Models <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="aftersales.html" class="service-row">
+                    <span class="sr-num">02</span>
+                    <span class="sr-icon"><i class="fas fa-screwdriver-wrench"></i></span>
+                    <span class="sr-body">
+                        <strong>After Sales</strong>
+                        <span class="sr-desc">Expert engine service, scheduled maintenance and repairs to keep your Honda running at its best.</span>
+                    </span>
+                    <span class="sr-cta">Service Centre <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="parts.html" class="service-row">
+                    <span class="sr-num">03</span>
+                    <span class="sr-icon"><i class="fas fa-cogs"></i></span>
+                    <span class="sr-body">
+                        <strong>Spare Parts</strong>
+                        <span class="sr-desc">100% genuine Honda spare parts with full warranty, available over the counter.</span>
+                    </span>
+                    <span class="sr-cta">View Parts <i class="fas fa-arrow-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -804,18 +843,20 @@
     </div>
 
     <!-- CTA to full e:HEV page -->
-    <section class="section" style="background: #f5f6f8; text-align: center; padding-top: 40px; padding-bottom: 60px;">
+    <section class="section cta-strip">
         <div class="container">
-            <h2 style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 10px;">Experience e:HEV Yourself</h2>
-            <p style="color: #666; margin-bottom: 24px;">Book a test drive of the Honda HR-V e:HEV at Honda Haripur</p>
-            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <span class="sec-kicker">Test Drive</span>
+            <h2>Experience e:HEV Yourself</h2>
+            <p>Book a test drive of the Honda HR-V e:HEV at Honda Haripur</p>
+            <div class="cta-strip-btns">
                 <a href="hrv.html" class="btn btn-red">Discover HR-V e:HEV</a>
+                <a href="contact.html?car=Honda%20HR-V%20e%3AHEV" class="btn">Book Test Drive</a>
             </div>
         </div>
     </section>
 
     <!-- Stats -->
-    <section class="section" style="background: linear-gradient(135deg, var(--honda-red) 0%, var(--honda-red-dark) 100%);">
+    <section class="stats-section">
         <div class="container">
             <div class="stats-row">
                 <div class="stat-item">
@@ -832,7 +873,7 @@
                 </div>
                 <div class="stat-item">
                     <h3>2S</h3>
-                    <p>Sales, Service & Spare Parts</p>
+                    <p>Sales, Service &amp; Spare Parts</p>
                 </div>
             </div>
         </div>
