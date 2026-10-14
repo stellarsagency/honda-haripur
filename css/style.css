@@ -1554,3 +1554,193 @@ li.has-dropdown:hover .dropdown-menu, li.has-dropdown.open .dropdown-menu { opac
     .hero-slide-content::before { left: 24px; bottom: 40px; }
     .hero-nav { left: 24px; bottom: 20px; }
 }
+
+/* ══════════════════════════════════════
+   PREMIUM UPGRADE — Hinoki Kintsugi
+   ══════════════════════════════════════ */
+:root {
+    --gold: #c9a55c;
+    --gold-soft: #e0c98a;
+    --gold-dim: rgba(201, 165, 92, 0.4);
+    --gold-line: rgba(201, 165, 92, 0.28);
+    --gradient-gold: linear-gradient(120deg, #b8964e 0%, #e5cf96 48%, #b8964e 100%);
+    --gradient-dark: linear-gradient(160deg, #131313 0%, #0a0a0a 100%);
+    --lux-shadow: 0 32px 80px rgba(14, 14, 14, 0.14);
+    --lux-shadow-soft: 0 12px 40px rgba(14, 14, 14, 0.07);
+}
+
+body { background: linear-gradient(180deg, #f6f2ea 0%, var(--washi) 40%, #f2eee4 100%); }
+
+/* ── Header luxury ── */
+header { background: rgba(246, 242, 234, 0.94); border-bottom: 1px solid var(--gold-line); box-shadow: 0 1px 0 rgba(255,255,255,0.8); }
+.header-inner { padding: 16px 40px; }
+.logo-text { letter-spacing: 0.04em; }
+.logo-text span { color: var(--gold); letter-spacing: 0.4em; text-shadow: none; }
+.logo-img { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12)); }
+
+nav a { color: var(--sumi-soft); font-weight: 400; letter-spacing: 0.12em; }
+nav a::after { background: var(--gradient-gold); height: 1.5px; }
+nav a:hover, nav a.active { color: #111; }
+nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+
+/* ── Top bar gold accents ── */
+.top-bar { border-bottom: 1px solid rgba(201, 165, 92, 0.25); }
+.top-bar-info .fab, .top-bar-info .fas { color: var(--gold); }
+.top-bar-social a:hover { color: var(--gold); }
+.tb-call-sale { color: var(--gold) !important; }
+
+/* ── Buttons — gold trim ── */
+.btn { position: relative; letter-spacing: 0.2em; border-width: 1px; }
+.btn::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    pointer-events: none;
+    z-index: 0;
+}
+.btn:hover::after { border-color: rgba(255, 255, 255, 0.25); }
+.btn-red::after { inset: 4px; border-color: rgba(255, 255, 255, 0.35); }
+.btn:not(.btn-red):not(.btn-white):not(.btn-outline-white):not(.btn-outline-red)::after { border-color: var(--gold-dim); }
+.btn:not(.btn-red):hover::after { border-color: rgba(255, 255, 255, 0.25); }
+
+/* ── Dealer band — black + gold ── */
+.dealer-section {
+    background: linear-gradient(180deg, #161616 0%, #0d0d0d 100%);
+    border-top: 1px solid var(--gold-line);
+    border-bottom: 1px solid var(--gold-line);
+    padding: 16px 20px;
+}
+.dealer-section .ds-inner { color: var(--gold-soft); letter-spacing: 0.3em; }
+
+/* ── Quick bar — gold hairline ── */
+.quick-bar { background: linear-gradient(180deg, #f0ebe0 0%, var(--washi-deep) 100%); border-bottom: 1px solid var(--gold-line); }
+.quick-btn { border-right-color: var(--gold-line) !important; color: var(--sumi) !important; }
+.quick-btn:first-child { border-left: 1px solid var(--gold-line); }
+.quick-btn i { color: var(--gold); }
+.quick-btn:hover { background: linear-gradient(140deg, #161616, #0d0d0d); color: var(--gold-soft) !important; border-color: #161616; }
+.quick-btn:hover i { color: var(--gold); }
+
+/* ── Hero premium ── */
+.hero-slide-content .badge {
+    border: 1px solid var(--gold-dim);
+    background: linear-gradient(135deg, rgba(20,20,20,0.5), rgba(20,20,20,0.25));
+    color: var(--gold-soft);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
+.hero-slide-content .price { background: linear-gradient(90deg, var(--gold-soft), #c9a55c 70%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: none; }
+.hero-slide::after { color: rgba(224, 201, 138, 0.2); text-shadow: 0 0 60px rgba(201, 165, 92, 0.15); }
+.hero-overlay { background: linear-gradient(105deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.1) 75%, rgba(10,10,10,0.4) 100%),
+                linear-gradient(180deg, rgba(10,10,10,0.55) 0%, transparent 30%, transparent 60%, rgba(10,10,10,0.75) 100%); }
+.hero-dot.active { background: var(--gradient-gold); box-shadow: 0 0 12px var(--gold-dim); }
+.hero-arrow:hover { background: var(--gradient-gold); color: var(--sumi); border-color: var(--gold); }
+.hero-slide-content::before { background: var(--gradient-gold); width: 72px; height: 2px; }
+
+/* ── Section headers — gold ornament ── */
+.section-header h2::after { background: var(--gradient-gold); width: 56px; height: 1.5px; position: relative; }
+.section-header h2::before { content: ''; display: block; width: 8px; height: 8px; border: 1px solid var(--gold); transform: rotate(45deg); margin: 0 auto 22px; }
+.section-header p { color: var(--ink-gray); letter-spacing: 0.06em; }
+.section-dark .section-header h2::before { border-color: var(--gold); }
+
+/* ── Brand statement ── */
+.brand-statement { background: var(--gradient-dark); }
+.bs-line { background: var(--gradient-gold); width: 1.5px; height: 64px; }
+.bs-sub { color: var(--gold); }
+.bs-stat strong { background: var(--gradient-gold); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.bs-stat span { color: rgba(244, 240, 232, 0.5); }
+.bs-stats { border-top: 1px solid var(--gold-line); }
+
+/* ── Cards — kintsugi edges ── */
+.model-card-main, .offer-card, .news-card, .voice-card, .video-card, .diff-card, .ehev-panel, .comp-stage {
+    background: #fdfcf9;
+    border: 1px solid rgba(201, 165, 92, 0.22);
+    box-shadow: var(--lux-shadow-soft);
+}
+.model-card-main:hover, .offer-card:hover, .news-card:hover, .voice-card:hover, .video-card:hover, .diff-card:hover {
+    box-shadow: var(--lux-shadow);
+    transform: translateY(-6px);
+    border-color: var(--gold-dim);
+}
+.model-card-image { background: linear-gradient(150deg, #ede7d9, #e4dccb); }
+.model-card-info h3 { font-weight: 700; letter-spacing: 0.05em; }
+.model-card-info .variant-name { color: var(--gold); letter-spacing: 0.26em; }
+.model-card-info .price-tag { background: linear-gradient(90deg, #141414, #3a3a3a); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.model-specs li i { color: var(--gold); }
+.model-tabs { border-bottom: 1px solid var(--gold-line); }
+.model-tab { font-weight: 600; }
+.model-tab::after { background: var(--gradient-gold); height: 2px; }
+
+/* ── Feature grid ── */
+.feature-grid { background: var(--gold-line); gap: 1px; border-color: var(--gold-line); }
+.feature-card { background: #fdfcf9; }
+.feature-card:hover { background: #ffffff; box-shadow: inset 0 -2px 0 var(--gold); }
+.feature-card i { color: var(--gold); }
+.feature-card::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); margin: 0 auto 22px; }
+.card-link { color: var(--gold); }
+
+/* ── Stats ── */
+.stats-section { background: linear-gradient(180deg, #141414, #0c0c0c); }
+.stat-number { background: var(--gradient-gold); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-label { color: rgba(244, 240, 232, 0.5); }
+.stats-grid, .stats-row { border-top: 1px solid var(--gold-line); border-bottom: 1px solid var(--gold-line); padding: 44px 0; }
+
+/* ── Voice ── */
+.voice-stars { color: var(--gold); letter-spacing: 4px; }
+.voice-avatar { background: var(--gradient-dark); border: 1px solid var(--gold-dim); color: var(--gold-soft); }
+.voice-card { border-left: 2px solid var(--gold); }
+
+/* ── Videos ── */
+.video-play { background: var(--gradient-gold); box-shadow: 0 6px 24px rgba(201,165,92,0.4); }
+.video-card:hover .video-play { background: var(--gradient-gold); transform: translate(-50%, -50%) scale(1.1); }
+
+/* ── CTA / page banner ── */
+.cta-section { background: var(--gradient-dark); border-top: 1px solid var(--gold-line); border-bottom: 1px solid var(--gold-line); }
+.cta-section::after { content: ''; display: block; width: 64px; height: 1.5px; background: var(--gradient-gold); margin: 0 auto 36px; position: relative; }
+.page-banner { background: var(--gradient-dark); }
+.page-banner::after { background: var(--gradient-gold); width: 56px; height: 1.5px; }
+
+/* ── FAQ / forms ── */
+.faq-item { border-bottom-color: var(--gold-line); }
+.faq-question i { color: var(--gold); }
+.form-group input:focus, .form-group textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201, 165, 92, 0.12); }
+
+/* ── Subscribe ── */
+.subscribe-box { background: var(--gradient-dark); border: 1px solid var(--gold-line); }
+.subscribe-form input:focus { border-color: var(--gold); }
+
+/* ── Footer — gold ── */
+footer { background: var(--gradient-dark); border-top: 1px solid var(--gold-line); }
+.footer-col h4 { color: var(--gold-soft); position: relative; padding-bottom: 14px; }
+.footer-col h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 28px; height: 1px; background: var(--gradient-gold); }
+.footer-col ul a:hover { color: var(--gold); padding-left: 6px; }
+.footer-social a { border-color: var(--gold-dim); color: var(--gold-soft); }
+.footer-social a:hover { background: var(--gold); color: var(--sumi); border-color: var(--gold); }
+.footer-grid { border-bottom-color: var(--gold-line); }
+.footer-bottom { border-top: 1px solid rgba(201, 165, 92, 0.15); color: rgba(244, 240, 232, 0.35); }
+.footer-bottom-links a:hover { color: var(--gold); }
+
+/* ── Tables / misc ── */
+th { background: linear-gradient(180deg, #161616, #0e0e0e); color: var(--gold-soft); border-bottom: 1px solid var(--gold-line); }
+tr:hover td { background: rgba(201, 165, 92, 0.05); }
+.badge-h, .model-badge, .news-date, .read-more { color: var(--gold); }
+.model-details { background: linear-gradient(135deg, #f4efe3, #efe8d8); border-left: 2px solid var(--gold); }
+.ehev-disclaimer { border-left-color: var(--gold); background: #f4efe3; }
+.comp-tab.active, .comp-tab:hover { background: var(--gradient-dark); border-color: var(--gold); color: var(--gold-soft); }
+.ehev-toc a { border-left-color: var(--gold-line); }
+.ehev-toc a:hover, .ehev-toc a.active { color: var(--gold); border-left-color: var(--gold); background: rgba(201, 165, 92, 0.06); }
+.e-badge { background: rgba(201, 165, 92, 0.12); color: var(--gold); }
+
+/* ── FAB / back-to-top gold ── */
+.wa-fab { background: var(--gradient-dark); border: 1px solid var(--gold-dim); color: var(--gold-soft); box-shadow: 0 12px 36px rgba(14,14,14,0.3); }
+.wa-fab:hover { background: var(--gradient-gold); color: var(--sumi); border-color: var(--gold); }
+.back-to-top { background: var(--gradient-dark); border: 1px solid var(--gold-dim); color: var(--gold); }
+.back-to-top:hover { background: var(--gradient-gold); color: var(--sumi); border-color: var(--gold); }
+
+/* ── Selection / scrollbar ── */
+::selection { background: rgba(201, 165, 92, 0.3); color: var(--sumi); }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--gold), #8a7340); }
+::-webkit-scrollbar-track { background: var(--washi); }
+
+/* ── Offer/news tag on hover ── */
+.offer-card > div::before, .news-card-content::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gradient-gold); margin-bottom: 16px; }
