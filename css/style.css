@@ -2475,3 +2475,21 @@ nav ul li { list-style: none; }
 
     .quick-btn i { font-size: 0.72rem; }
 }
+
+/* ── Fix quick-btn hover (final) ── */
+.quick-btn:hover {
+    background: var(--gradient-red) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(228, 5, 33, 0.4);
+}
+
+.quick-btn:hover i {
+    color: #ffffff !important;
+    transform: none;
+}
+
+.quick-btn:focus-visible {
+    background: var(--gradient-red);
+    color: #ffffff;
+}
