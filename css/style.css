@@ -2076,3 +2076,59 @@ li.has-dropdown.open .dropdown-menu {
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── Fix: nav ul horizontal ── */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    list-style: none;
+}
+
+nav ul li { list-style: none; }
+
+/* ── Fix: dealer-section ds-inner / badge-h ── */
+.dealer-section .ds-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dealer-section .badge-h {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.ds-inner .ds-text {
+    font-size: 0.86rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    nav ul li { width: 100%; }
+    nav ul li a { display: block; }
+}
+
+/* ── Fix: quick-bar 3 items ── */
+.quick-bar .container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .quick-bar .container { grid-template-columns: repeat(3, 1fr); }
+    .quick-btn:nth-child(2) { border-right: 1px solid var(--honda-border-light); }
+}
