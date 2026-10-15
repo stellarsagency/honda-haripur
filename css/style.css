@@ -2107,3 +2107,8 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 .dealer-section .badge-h { filter: brightness(0) invert(1); height: 1.5em; }
 .footer-brand .logo-img { filter: brightness(0) invert(1); }
 .hero-slide-content .badge { background: none; }
+
+/* ── Real Honda logo alignment in dealer band ── */
+.dealer-section .ds-inner { display: inline-flex; align-items: center; gap: 16px; line-height: 1; }
+.dealer-section .badge-h { height: 1.8em; width: auto; margin: 0; filter: brightness(0) invert(1); }
+.dealer-section .ds-text { display: inline-flex; align-items: center; line-height: 1; }
