@@ -2100,3 +2100,10 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     nav a::after { display: none; }
     nav a:hover, nav a.active { color: var(--gold); background: rgba(201, 165, 92, 0.06); }
 }
+
+/* ── Honda logo SVG ── */
+.logo-img { height: 44px; width: auto; }
+.logo-text { line-height: 1.1; }
+.dealer-section .badge-h { filter: brightness(0) invert(1); height: 1.5em; }
+.footer-brand .logo-img { filter: brightness(0) invert(1); }
+.hero-slide-content .badge { background: none; }
