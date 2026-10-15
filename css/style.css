@@ -2068,3 +2068,35 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     nav { display: none; }
     nav.active { display: flex; }
 }
+
+/* nav drawer 901–1100 */
+@media (max-width: 1100px) and (min-width: 901px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100vh;
+        background: var(--sumi);
+        flex-direction: column;
+        padding: 80px 0 40px;
+        z-index: 1200;
+        transition: right 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+        overflow-y: auto;
+        border-left: 1px solid rgba(201, 165, 92, 0.25);
+        box-shadow: -24px 0 64px rgba(20, 20, 20, 0.3);
+    }
+    nav.active { right: 0; display: flex; }
+    nav ul { flex-direction: column; align-items: stretch; gap: 0; width: 100%; }
+    nav ul li { width: 100%; }
+    nav a {
+        padding: 16px 32px;
+        font-size: 0.9rem;
+        color: rgba(244, 240, 232, 0.7);
+        border-bottom: 1px solid rgba(244, 240, 232, 0.05);
+        display: block;
+        white-space: nowrap;
+    }
+    nav a::after { display: none; }
+    nav a:hover, nav a.active { color: var(--gold); background: rgba(201, 165, 92, 0.06); }
+}
