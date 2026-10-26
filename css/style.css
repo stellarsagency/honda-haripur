@@ -1322,7 +1322,7 @@ footer {
     .bs-stats { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1280px) {
     .mobile-toggle { display: block; }
 
     nav {
@@ -2428,4 +2428,35 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     .hero-slide-content h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
     .hero-btns { gap: 8px; }
     .hero-btns .btn { min-height: 42px; padding: 10px 12px; font-size: 0.7rem; }
+}
+
+/* Hero buttons on dark poster-backed hero */
+.hero-slide-content .btn-white {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--sumi);
+}
+.hero-slide-content .btn-white i { color: var(--sumi); }
+.hero-slide-content .btn-white::before { background: var(--honda-red); }
+.hero-slide-content .btn-white:hover { color: #ffffff; border-color: var(--honda-red); }
+.hero-slide-content .btn-white:hover i { color: #ffffff; }
+
+.hero-slide-content .btn-outline-red {
+    color: #ff4d5e;
+    border-color: #ff4d5e;
+}
+.hero-slide-content .btn-outline-red i { color: #ff4d5e; }
+.hero-slide-content .btn-outline-red::before { background: var(--honda-red); }
+.hero-slide-content .btn-outline-red:hover { color: #ffffff; border-color: var(--honda-red); }
+.hero-slide-content .btn-outline-red:hover i { color: #ffffff; }
+
+/* Compact header nav on laptop widths */
+@media (max-width: 1600px) and (min-width: 1281px) {
+    .header-inner { padding: 14px 28px; }
+    nav a { padding: 10px 10px; font-size: 0.72rem; letter-spacing: 0.05em; }
+    nav a::after { left: 10px; right: 10px; }
+    .header-cta { padding: 10px 16px; font-size: 0.64rem; }
+}
+@media (max-width: 1400px) and (min-width: 1281px) {
+    .header-cta { display: none; }
 }
