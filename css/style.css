@@ -2364,3 +2364,57 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     .steps-grid { grid-template-columns: 1fr; gap: 16px; }
     .exchange-steps { padding: 44px 0; }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   HONDA 2 HONDA POSTER BANNER (homepage) — Haripur
+   ═════════════════════════════════════════════════════════════════ */
+.eb2-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+    gap: 52px;
+    align-items: center;
+}
+.eb2-poster { position: relative; }
+.eb2-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid rgba(201, 165, 92, 0.35);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+}
+.eb2-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.1vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.12;
+    color: var(--washi);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+}
+.eb2-points {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+.eb2-points li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: rgba(244, 240, 232, 0.78);
+}
+.eb2-points i { color: var(--gold); font-size: 0.92rem; }
+.eb2-content .eb-tagline { margin-bottom: 20px; }
+
+@media (max-width: 992px) {
+    .eb2-grid { grid-template-columns: 1fr; gap: 30px; }
+    .eb2-poster { max-width: 340px; margin: 0 auto; width: 100%; }
+}
+@media (max-width: 640px) {
+    .eb2-poster { max-width: 290px; }
+    .eb2-points li { font-size: 0.84rem; }
+}
