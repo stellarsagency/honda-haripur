@@ -2246,3 +2246,105 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 @media (max-width: 640px) {
     .hero-btns .btn { flex: 1 1 100%; }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   HONDA 2 HONDA EXCHANGE BANNER — Haripur
+   ═════════════════════════════════════════════════════════════════ */
+.exchange-banner {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(55% 90% at 12% 0%, rgba(228,5,33,0.24), transparent 60%),
+        radial-gradient(45% 70% at 95% 100%, rgba(201,165,92,0.16), transparent 65%),
+        linear-gradient(135deg, #101010 0%, #1a1a1a 60%, #0b0b0b 100%);
+    padding: 64px 0;
+    border-top: 1px solid var(--gold-line);
+    border-bottom: 1px solid var(--gold-line);
+}
+
+.exchange-banner::before,
+.exchange-banner::after {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 90px;
+    background: linear-gradient(90deg, transparent, rgba(201,165,92,0.25), transparent);
+    transform: rotate(-18deg);
+    pointer-events: none;
+}
+.exchange-banner::before { top: -20px; left: -80px; }
+.exchange-banner::after { bottom: -20px; right: -60px; }
+
+.eb-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.eb-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 18px;
+}
+
+.eb-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--washi);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+}
+
+.eb-tagline { font-size: 1rem; color: rgba(244,240,232,0.65); margin-bottom: 22px; }
+
+.eb-meta { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-bottom: 28px; }
+.eb-meta span { display: inline-flex; align-items: center; gap: 9px; font-size: 0.86rem; color: rgba(244,240,232,0.8); }
+.eb-meta i { color: var(--gold); }
+
+.eb-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.eb-btns .btn { display: inline-flex; align-items: center; gap: 10px; }
+
+.eb-visual { position: relative; }
+.eb-cars { display: flex; align-items: flex-end; justify-content: center; }
+.eb-cars img {
+    width: 38%;
+    aspect-ratio: 4 / 2.6;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(201,165,92,0.3);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    margin-left: -4%;
+    transform: translateY(8px);
+    transition: transform 0.4s ease;
+}
+.eb-cars img:first-child { margin-left: 0; z-index: 1; }
+.eb-cars img:nth-child(2) { width: 44%; z-index: 3; transform: translateY(-6px); }
+.eb-cars img:nth-child(3) { z-index: 2; }
+.exchange-banner:hover .eb-cars img { transform: translateY(0); }
+.exchange-banner:hover .eb-cars img:nth-child(2) { transform: translateY(-14px); }
+
+@media (max-width: 992px) {
+    .eb-inner { grid-template-columns: 1fr; gap: 34px; }
+    .eb-visual { order: -1; }
+    .eb-cars img { width: 36%; }
+    .eb-cars img:nth-child(2) { width: 42%; }
+}
+
+@media (max-width: 640px) {
+    .exchange-banner { padding: 44px 0; }
+    .eb-content h2 { font-size: 1.7rem; }
+    .eb-btns .btn { flex: 1 1 100%; justify-content: center; }
+}
