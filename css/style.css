@@ -2418,3 +2418,14 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     .eb2-poster { max-width: 290px; }
     .eb2-points li { font-size: 0.84rem; }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   HERO CTA FIT (4 buttons)
+   ═════════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+    .hero-banner { min-height: 640px; }
+    .hero-slide-content { padding-bottom: 88px; }
+    .hero-slide-content h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
+    .hero-btns { gap: 8px; }
+    .hero-btns .btn { min-height: 42px; padding: 10px 12px; font-size: 0.7rem; }
+}
