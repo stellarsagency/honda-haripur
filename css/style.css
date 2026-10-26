@@ -2180,3 +2180,53 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
     .bs-quote { font-size: 1.35rem; }
     .page-banner h1 { font-size: 1.75rem; }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   EXCHANGE OFFER PAGE — Haripur
+   ═════════════════════════════════════════════════════════════════ */
+.event-banner { position: relative; overflow: hidden; padding: 86px 0 100px; text-align: center; }
+.event-banner::before { content: ''; position: absolute; inset: 0; background: radial-gradient(60% 60% at 50% 0%, rgba(228,5,33,0.2), transparent 60%), linear-gradient(180deg, rgba(14,14,14,0.5) 0%, transparent 45%, transparent 75%, rgba(14,14,14,0.75) 100%); z-index: 1; }
+.event-banner .container { position: relative; z-index: 2; }
+.event-banner h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 800; color: var(--washi); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 10px; text-shadow: 0 4px 30px rgba(0,0,0,0.5); }
+.event-banner p { font-size: 1.05rem; color: rgba(244,240,232,0.8); max-width: 720px; margin: 0 auto; }
+
+.event-details { background: var(--washi-deep); }
+.event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-bottom: 40px; }
+.event-card { background: #fdfcf9; border: 1px solid var(--gold-line); padding: 32px 24px; text-align: center; border-radius: 4px; transition: var(--transition); }
+.event-card:hover { border-color: var(--gold-dim); box-shadow: var(--lux-shadow-soft); transform: translateY(-4px); }
+.event-icon { width: 56px; height: 56px; background: rgba(201,165,92,0.12); color: var(--honda-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin: 0 auto 16px; }
+.event-card h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--sumi); }
+.event-card p { font-size: 0.86rem; color: var(--ink-gray); line-height: 1.6; margin: 0; }
+
+.event-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; background: var(--sumi); padding: 36px 26px; border-radius: 4px; border-top: 1px solid var(--gold-line); border-bottom: 1px solid var(--gold-line); }
+.meta-item { color: var(--washi); font-size: 0.9rem; display: flex; align-items: center; gap: 10px; }
+.meta-item i { color: var(--honda-red); font-size: 1rem; }
+.meta-item strong { color: var(--gold-soft); font-size: 1rem; }
+
+.event-inquiry { padding: 56px 0 66px; }
+.inquiry-wrapper { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: start; }
+.inquiry-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; box-shadow: var(--lux-shadow-soft); }
+.inquiry-header { margin-bottom: 24px; }
+.inquiry-header h2 { font-family: var(--font-display); font-size: 1.9rem; margin-bottom: 6px; color: var(--sumi); }
+.inquiry-header p { color: var(--ink-gray); font-size: 0.92rem; margin: 0; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-gray); margin-bottom: 6px; }
+.form-group label span { color: var(--honda-red); }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--gold-dim); border-radius: 4px; font-size: 0.88rem; font-family: inherit; background: #fdfcf9; transition: var(--transition); box-sizing: border-box; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--honda-red); box-shadow: 0 0 0 3px rgba(228,5,33,0.1); }
+.form-group textarea { resize: vertical; min-height: 90px; }
+
+.btn-block { width: 100%; justify-content: center; }
+.wa-direct { border-color: #25d366; color: #25d366; }
+.wa-direct:hover { background: #25d366; color: #fff; }
+
+.form-note { font-size: 0.78rem; color: var(--ink-gray); margin-bottom: 10px; text-align: center; }
+
+@media (max-width: 900px) {
+    .inquiry-wrapper { grid-template-columns: 1fr; gap: 30px; }
+    .event-grid { grid-template-columns: 1fr; }
+    .event-meta { grid-template-columns: 1fr; gap: 12px; padding: 26px 18px; }
+    .form-row { grid-template-columns: 1fr; }
+}

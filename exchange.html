@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda 2 Honda Exchange Offer | Honda Haripur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sticky-top">
+    <div class="top-bar">
+        <div class="container">
+            <a href="tel:+923001234567" class="tb-call tb-call-sale" aria-label="Call For Sale" title="For Sale: +92 300 1234567"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">For Sale:</span> +92 300 1234567</a>
+            <a href="tel:+92995123456" class="tb-call" aria-label="Call After Sale" title="After Sale: +92 995 123456"><span class="tb-call-ic"><i class="fas fa-phone-alt"></i></span><span class="tb-lbl">After Sale:</span> +92 995 123456</a>
+        </div>
+    </div>
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/honda-logo.svg" alt="Honda Haripur" class="logo-img" style="height: 44px;">
+                <span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                    <li><a href="exchange.html" class="active">Exchange Offer</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                    <li><a href="used-cars.html">Used Cars</a></li>
+                    <li><a href="insurance.html">Insurance</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="tracker.html">Tracker</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-red header-cta">Book Test Drive</a>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="page-banner event-banner" style="background: var(--sumi);">
+        <div class="container">
+            <h1 id="dTitle">Honda 2 Honda Exchange Offer</h1>
+            <p id="dSubtitle">Upgrade Your Honda. Experience the Difference.</p>
+        </div>
+    </section>
+
+    <section class="section event-details">
+        <div class="container">
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Exclusive Exchange Offer</h3>
+                    <p>Upgrade your current Honda to the latest model with special exchange benefits and assured valuation.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-steering-wheel"></i></div>
+                    <h3>Test Drive Experience</h3>
+                    <p>Book a test drive of your favourite Honda and feel the performance before you decide.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-gem"></i></div>
+                    <h3>A Premium Experience</h3>
+                    <p>Hospitality, refreshments and expert guidance — your presence makes this event more special.</p>
+                </div>
+            </div>
+
+            <div class="event-meta">
+                <div class="meta-item"><i class="fas fa-calendar-alt"></i> <strong>Date:</strong> Friday 23-10-2026</div>
+                <div class="meta-item"><i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> Honda Avenue Islamabad</div>
+                <div class="meta-item"><i class="fas fa-clock"></i> <strong>Time:</strong> 10:00 AM – 6:00 PM</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section event-inquiry">
+        <div class="container">
+            <div class="inquiry-wrapper">
+                <div class="inquiry-image">
+                    <img src="https://images.unsplash.com/photo-1606378141188-458645637688?w=700&q=85" alt="Honda Exchange">
+                </div>
+                <div class="inquiry-form-box">
+                    <div class="section-header inquiry-header">
+                        <h2>Exchange Your Car</h2>
+                        <p>Tell us about your current car and we will get back to you with the best exchange offer.</p>
+                    </div>
+                    <form id="exchangeForm" onsubmit="return submitExchange(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name <span>*</span></label>
+                                <input type="text" id="exName" placeholder="e.g. Ahmed Khan" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number <span>*</span></label>
+                                <input type="tel" id="exPhone" placeholder="+92 300 1234567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Current Car Make <span>*</span></label>
+                            <input type="text" id="exMake" placeholder="e.g. Honda / Toyota" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Model <span>*</span></label>
+                                <input type="text" id="exModel" placeholder="e.g. City / Corolla" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Variant <span>*</span></label>
+                                <input type="text" id="exVariant" placeholder="e.g. Aspire 1.5" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Year of Manufacture <span>*</span></label>
+                                <input type="number" id="exYear" min="2000" max="2026" placeholder="2018" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Kilometers Driven <span>*</span></label>
+                                <input type="number" id="exKms" placeholder="e.g. 45000" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Car Condition <span>*</span></label>
+                            <select id="exCondition" required>
+                                <option value="">Select condition</option>
+                                <option>Excellent</option>
+                                <option>Good</option>
+                                <option>Fair</option>
+                                <option>Needs Repair</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Interested New Model</label>
+                            <select id="exInterest">
+                                <option value="">Select model</option>
+                                <option>Honda Civic</option>
+                                <option>Honda HR-V</option>
+                                <option>Honda City</option>
+                                <option>Not decided</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Message</label>
+                            <textarea id="exMessage" rows="3" placeholder="Any extra details about your car..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-red btn-block">Submit Exchange Inquiry <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="form-note">Or WhatsApp us directly with your car details.</div>
+                    <a href="https://wa.me/923001234567?text=Hi,%20I%20want%20to%20exchange%20my%20car%20at%20Honda%20Haripur.%20Please%20share%20details." class="btn btn-outline-red btn-block wa-direct" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" style="background: var(--sumi); padding: 50px 0; text-align: center; color: #fff;">
+        <div class="container">
+            <h2 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 12px;">Ready to Upgrade?</h2>
+            <p style="margin-bottom: 22px; opacity: 0.9;">Visit Honda Avenue Islamabad on Friday 23-10-2026 or book your exchange evaluation today.</p>
+            <a href="https://wa.me/923001234567?text=Hi,%20I%20want%20to%20attend%20the%20Honda%202%20Honda%20Exchange%20Event%20and%20evaluate%20my%20car." class="btn btn-red" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Confirm on WhatsApp</a>
+            <a href="tel:+923001234567" class="btn btn-outline-red"><i class="fas fa-phone-alt"></i> Call Sales</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="images/honda-logo.svg" alt="Honda Haripur" class="logo-img" style="height: 44px;">
+                        <span class="logo-text">Honda Haripur<span>Authorised 2S Dealership</span></span>
+                    </a>
+                    <p>Where Every Journey Begins with Excellence.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Model Line</h4>
+                    <ul>
+                        <li><a href="civic.html">Honda Civic</a></li>
+                        <li><a href="hrv.html">Honda HR-V</a></li>
+                        <li><a href="city.html">Honda City</a></li>
+                        <li><a href="exchange.html">Exchange Offer</a></li>
+                        <li><a href="ehev.html">e:HEV Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="salesservice.html">Sales &amp; Service</a></li>
+                        <li><a href="aftersales.html">After Sales</a></li>
+                        <li><a href="parts.html">Genuine Parts</a></li>
+                        <li><a href="tracker.html">Vehicle Tracker</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help &amp; Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--honda-red); margin-right: 8px;"></i> Main GT Road, Haripur</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 300 1234567</li>
+                        <li><i class="fas fa-phone" style="color: var(--honda-red); margin-right: 8px;"></i> +92 995 123456</li>
+                        <li><i class="fas fa-envelope" style="color: var(--honda-red); margin-right: 8px;"></i> info@hondaharipur.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2026 Honda Haripur - Authorised 2S Dealership</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/923001234567" class="wa-fab wa-fab-left" target="_blank" rel="noopener" aria-label="WhatsApp For Sale" title="WhatsApp For Sale"><i class="fab fa-whatsapp"></i><span class="wa-tag">SALE</span></a>
+    <a href="https://wa.me/92995123456" class="wa-fab wa-fab-right" target="_blank" rel="noopener" aria-label="WhatsApp After Sales" title="WhatsApp After Sales"><i class="fab fa-whatsapp"></i><span class="wa-tag">AFTER SALE</span></a>
+    <script src="js/main.js"></script>
+    <script>
+    (function() {
+        function submitExchange(e) {
+            e.preventDefault();
+            var name = document.getElementById('exName').value;
+            var phone = document.getElementById('exPhone').value;
+            var make = document.getElementById('exMake').value;
+            var model = document.getElementById('exModel').value;
+            var variant = document.getElementById('exVariant').value;
+            var year = document.getElementById('exYear').value;
+            var kms = document.getElementById('exKms').value;
+            var condition = document.getElementById('exCondition').value;
+            var interest = document.getElementById('exInterest').value;
+            var message = document.getElementById('exMessage').value || '-';
+
+            var text = 'Honda 2 Honda Exchange Inquiry:%0A%0A' +
+                '*Name:* ' + encodeURIComponent(name) + '%0A' +
+                '*Phone:* ' + encodeURIComponent(phone) + '%0A' +
+                '*Current Car:* ' + encodeURIComponent(make + ' ' + model + ' ' + variant) + '%0A' +
+                '*Year:* ' + encodeURIComponent(year) + '%0A' +
+                '*Kms Driven:* ' + encodeURIComponent(kms) + '%0A' +
+                '*Condition:* ' + encodeURIComponent(condition) + '%0A' +
+                '*Interested Model:* ' + encodeURIComponent(interest) + '%0A' +
+                '*Message:* ' + encodeURIComponent(message);
+
+            window.open('https://wa.me/923001234567?text=' + text, '_blank');
+            return false;
+        }
+        document.getElementById('exchangeForm').addEventListener('submit', submitExchange);
+    })();
+    </script>
+</body>
+</html>
