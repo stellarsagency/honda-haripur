@@ -1788,3 +1788,48 @@ footer {
 @media (max-width: 560px) {
     .about-cap-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================================
+   MOBILE POLISH (<=640px)
+   ========================================================================= */
+@media (max-width: 640px) {
+    html { scroll-padding-top: 230px; }
+    .hero-banner { min-height: 460px; }
+    .hero-slide-content { padding: 84px 18px 96px; }
+    .hero-slide-content h1 { font-size: clamp(2rem, 11vw, 2.6rem); margin-bottom: 12px; }
+    .hero-slide-content p { font-size: 0.86rem; margin-bottom: 20px; }
+    .hero-btns .btn { padding: 11px 15px; font-size: 0.7rem; }
+    .trust-bar { margin-top: -14px; padding-top: 12px; }
+    .trust-item { gap: 8px; }
+    .trust-item i { font-size: 1rem; width: 20px; }
+    .trust-item div strong { font-size: 0.8rem; }
+    .trust-item div span { font-size: 0.62rem; }
+    .section { padding: 56px 0; }
+    .section-header { margin-bottom: 28px; }
+    .section-header h2 { font-size: 1.7rem; }
+    .section-header p { font-size: 0.88rem; }
+    .about-media img { height: 260px; }
+    .about-badge { padding: 10px 14px; bottom: 12px; right: 10px; }
+    .about-badge strong { font-size: 1.35rem; }
+    .about-badge span { font-size: 0.52rem; }
+    .about-copy h2 { font-size: 1.75rem; }
+    .about-copy > p { font-size: 0.9rem; }
+    .about-points li { font-size: 0.82rem; }
+    .about-stats { padding: 12px 0; }
+    .about-stats strong { font-size: 1.12rem; }
+    .about-stats span { font-size: 0.52rem; letter-spacing: 0.1em; }
+    .about-cap { padding: 18px 16px; }
+    .about-cap i { font-size: 1.15rem; margin-bottom: 8px; }
+    .about-cap h4 { font-size: 0.9rem; }
+    .about-cap p { font-size: 0.78rem; }
+    .team-photo { height: 170px; }
+    .team-initials { font-size: 2.2rem; }
+    .team-name { font-size: 0.95rem; }
+    .team-role { font-size: 0.6rem; }
+    .dealership-card { padding: 28px 20px; }
+    .dealership-copy h2 { font-size: 1.9rem; }
+    .dealer-section .ds-inner { letter-spacing: 0.12em; font-size: 0.64rem; }
+    .dealer-section .badge-h { height: 1.3em; }
+    .quick-btn { font-size: 0.66rem; padding: 7px 12px; }
+    .quick-btn-sales .qb-stack small { font-size: 0.38rem; }
+}
