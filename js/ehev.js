@@ -1,4 +1,4 @@
-﻿// e:HEV Tech page interactivity
+// e:HEV Tech page interactivity
 document.addEventListener('DOMContentLoaded', function() {
     // Sidebar panel navigation
     var navBtns = document.querySelectorAll('.ehev-nav-btn');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (subForm) {
         subForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for subscribing! You will receive the latest e:HEV updates from Honda Haripur.');
+            alert('Thank you for subscribing! You will receive the latest e:HEV updates from Honda hARIBUR.');
             this.reset();
         });
     }

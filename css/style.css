@@ -1,4 +1,4 @@
-﻿/* Honda Haripur — Hinoki: Japanese Minimal Luxury */
+/* Honda hARIBUR — Hinoki: Japanese Minimal Luxury */
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
 
 :root {
@@ -2115,7 +2115,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 
 /* ═══ Mobile Optimisation v2 ═══ */
 @media (max-width: 768px) {
-    html, body { overflow-x: hidden; }
+    html, body { overflow-x: clip; }
     .container { padding: 0 18px; }
     .section { padding: 56px 0; }
     .section-header { margin-bottom: 40px; }
@@ -2182,7 +2182,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   EXCHANGE OFFER PAGE — Haripur
+   EXCHANGE OFFER PAGE — hARIBUR
    ═════════════════════════════════════════════════════════════════ */
 .event-banner { position: relative; overflow: hidden; padding: 86px 0 100px; text-align: center; }
 .event-banner::before { content: ''; position: absolute; inset: 0; background: radial-gradient(60% 60% at 50% 0%, rgba(228,5,33,0.2), transparent 60%), linear-gradient(180deg, rgba(14,14,14,0.5) 0%, transparent 45%, transparent 75%, rgba(14,14,14,0.75) 100%); z-index: 1; }
@@ -2248,7 +2248,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   HONDA 2 HONDA EXCHANGE BANNER — Haripur
+   HONDA 2 HONDA EXCHANGE BANNER — hARIBUR
    ═════════════════════════════════════════════════════════════════ */
 .exchange-banner {
     position: relative;
@@ -2350,7 +2350,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   EXCHANGE — HOW IT WORKS STEPS (Haripur)
+   EXCHANGE — HOW IT WORKS STEPS (hARIBUR)
    ═════════════════════════════════════════════════════════════════ */
 .exchange-steps { background: var(--washi-deep); }
 .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -2366,7 +2366,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   HONDA 2 HONDA POSTER BANNER (homepage) — Haripur
+   HONDA 2 HONDA POSTER BANNER (homepage) — hARIBUR
    ═════════════════════════════════════════════════════════════════ */
 .eb2-grid {
     display: grid;

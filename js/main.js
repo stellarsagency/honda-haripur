@@ -1,4 +1,4 @@
-﻿// Honda Haripur - Main JavaScript
+// Honda hARIBUR - Main JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu
     const mobileToggle = document.getElementById('mobileToggle');
