@@ -176,22 +176,47 @@ img { max-width: 100%; }
 }
 .top-bar {
     background: #050505;
-    color: var(--d-muted);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.top-bar-inner { height: 38px; }
-.tb-call { color: #cfcfcf !important; font-size: 0.74rem; font-weight: 400; }
-.tb-call:hover { color: #fff !important; }
-.tb-call-sale { color: #fff !important; }
-.tb-call-ic, .tb-lbl { color: var(--d-red); }
-.tb-lbl { opacity: 0.8; }
+.top-bar-inner { height: auto; padding: 0; }
+.tb-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.tb-call:hover { color: #fff; }
+.tb-call-ic {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: var(--d-red);
+    color: #fff;
+    font-size: 1rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+.tb-call:hover .tb-call-ic { transform: scale(1.1); }
+.tb-call-sale { color: #fff; font-weight: 600; }
+.tb-call-sale .tb-lbl { font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+.tb-lbl { color: var(--d-red); opacity: 1; font-weight: 500; }
 .top-bar-right a {
-    width: 27px;
-    height: 27px;
+    width: 32px;
+    height: 32px;
     border: 1px solid var(--d-line);
     border-radius: 50%;
     color: var(--d-muted);
-    font-size: 0.66rem;
+    font-size: 0.7rem;
 }
 .top-bar-right a:hover { color: #fff; border-color: var(--d-red); background: var(--d-red-soft); }
 
