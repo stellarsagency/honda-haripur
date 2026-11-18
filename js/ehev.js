@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (subForm) {
         subForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for subscribing! You will receive the latest e:HEV updates from Honda hARIBUR.');
+            alert('Thank you for subscribing! You will receive the latest e:HEV updates from Honda Haripur.');
             this.reset();
         });
     }

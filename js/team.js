@@ -1,5 +1,5 @@
 /* =========================================================================
-   HARIBUR HONDA — TEAM SECTION (editable)
+   Haripur HONDA — TEAM SECTION (editable)
    -------------------------------------------------------------------------
    Team update karne ke liye sirf neeche wala TEAM array edit karein.
    Naya member add karne ke liye ek { ... } block copy karke paste karein.
