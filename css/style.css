@@ -96,7 +96,7 @@ header {
 }
 
 .logo { display: flex; align-items: center; gap: 16px; }
-.logo-img { height: 52px; width: auto; transition: var(--transition); }
+.logo-img { height: 80px; width: auto; transition: var(--transition); }
 .logo:hover .logo-img { transform: scale(1.04); }
 
 .logo-text {
@@ -1387,7 +1387,7 @@ li.has-dropdown:hover .dropdown-menu, li.has-dropdown.open .dropdown-menu { opac
 @media (max-width: 768px) {
     .top-bar-info { display: none; }
     .top-bar .container { justify-content: center; }
-    .logo-img { height: 44px; }
+    .logo-img { height: 60px; }
     .logo-text { font-size: 1.2rem; }
 
     .hero-banner { height: auto; min-height: 0; }
@@ -2122,7 +2122,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 
     /* header */
     .header-inner { padding: 12px 14px; }
-    .logo-img { height: 36px; }
+    .logo-img { height: 52px; }
     .logo-text { font-size: 1.02rem; }
     .logo-text span { font-size: 0.5rem; letter-spacing: 0.16em; }
     .mobile-toggle { width: 48px; height: 48px; font-size: 1.35rem; }
@@ -2478,7 +2478,7 @@ nav a { padding: 10px 12px; font-size: 0.76rem; }
 /* Header — dark glass */
 header { background: rgba(10, 10, 10, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--dd-border); }
 .header-inner { padding: 16px 40px; max-width: 1400px; margin: 0 auto; }
-.logo-img { height: 44px; width: auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
+.logo-img { height: 60px; width: auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
 .logo-text { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--dd-text); line-height: 1.15; white-space: nowrap; }
 .logo-text span { display: block; font-family: var(--font-body); font-size: 0.58rem; font-weight: 500; color: var(--dd-accent); text-transform: uppercase; letter-spacing: 0.3em; margin-top: 3px; }
 nav ul { gap: 0; }
