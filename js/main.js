@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroPrev = document.getElementById('heroPrev');
     const heroNext = document.getElementById('heroNext');
     let currentSlide = 0;
-    const totalSlides = 3;
+    const totalSlides = heroSlides ? heroSlides.children.length : 0;
 
     function goToSlide(index) {
         if (!heroSlides) return;

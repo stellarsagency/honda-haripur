@@ -1820,6 +1820,7 @@ footer {
 @media (max-width: 640px) {
     html { scroll-padding-top: 230px; }
     .hero-facility { min-height: 500px; }
+    .hero-facility .hero-slide { min-height: 500px; }
     .hero-facility-content { padding: 96px 0 150px; }
     .hero-facility h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
     .hero-facility-tag { font-size: 0.88rem; margin-bottom: 24px; }
@@ -1939,3 +1940,5 @@ footer {
 .hfs-item i { color: var(--d-red); font-size: 0.9rem; }
 .hfs-item:hover { color: #fff; background: var(--d-red-soft); }
 '
+.hero-facility .hero-slide { min-height: 640px; height: auto; }
+.hero-facility .hero-slide .hero-facility-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
