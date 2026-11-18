@@ -1,5 +1,5 @@
 /* =========================================================================
-   HONDA Haripur — DRIVE THE DREAM 2026
+   HONDA Haripur â€” DRIVE THE DREAM 2026
    Dark cinematic UI layer. Loaded after style.css and ehev.css.
    Look only: no content, links or functionality are changed here.
    ========================================================================= */
@@ -228,7 +228,7 @@ header { background: transparent; border-bottom: 0; }
 }
 .logo { gap: 12px; }
 .logo-img {
-    height: 56px;
+    height: 72px;
     width: auto;
     /* photo logo: no drop-shadow */
 }
@@ -292,7 +292,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 
 @media (min-width: 1281px) and (max-width: 1520px) {
     .header-inner { padding: 12px 24px; }
-    .logo-img { height: 48px; }
+    .logo-img { height: 60px; }
     .logo-text { font-size: 1.08rem; letter-spacing: 0.12em; }
     .logo-text span { font-size: 0.43rem; letter-spacing: 0.22em; }
     nav a { font-size: 0.62rem; padding: 10px 7px; letter-spacing: 0.09em; }
@@ -498,7 +498,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 .trust-item div strong { display: block; color: #fff; font-size: 0.83rem; font-weight: 500; letter-spacing: 0.01em; }
 .trust-item div span { display: block; color: #969696; font-size: 0.7rem; margin-top: 1px; }
 
-/* Dealer band — Honda red strip (Abbott-style) */
+/* Dealer band â€” Honda red strip (Abbott-style) */
 .dealer-section {
     background: var(--d-red);
     color: #fff;
@@ -520,7 +520,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 }
 .dealer-section .ds-text { color: #fff; }
 
-/* Quick bar — red pills (Abbott-style) */
+/* Quick bar â€” red pills (Abbott-style) */
 .quick-bar {
     max-height: 0;
     opacity: 0;
@@ -677,7 +677,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 .section-dark .section-header h2 { color: #fff; }
 
 /* =========================================================================
-   05. HOME — LINEUP
+   05. HOME â€” LINEUP
    ========================================================================= */
 .section-lineup { padding-top: clamp(56px, 6vw, 84px); }
 .lineup-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
@@ -736,7 +736,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 .lineup-card:hover .lineup-cta i { transform: translateX(4px); }
 
 /* =========================================================================
-   06. HOME — PERFORMANCE
+   06. HOME â€” PERFORMANCE
    ========================================================================= */
 .section-performance { position: relative; overflow: hidden; }
 .section-performance::before {
@@ -788,7 +788,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 }
 
 /* =========================================================================
-   07. HOME — WHY CHOOSE
+   07. HOME â€” WHY CHOOSE
    ========================================================================= */
 #why-honda {
     position: relative;
@@ -847,7 +847,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 #why-honda .feature-card p { color: var(--d-muted); font-size: 0.84rem; line-height: 1.65; }
 
 /* =========================================================================
-   08. HOME — OFFERS STRIP
+   08. HOME â€” OFFERS STRIP
    ========================================================================= */
 .section-offers { padding: clamp(20px, 3vw, 36px) 0 clamp(64px, 7vw, 92px); }
 .offer-hero {
@@ -928,7 +928,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 .offer-text .btn:hover { color: var(--d-red); transform: none; box-shadow: none; }
 
 /* =========================================================================
-   09. HOME — EXCHANGE POSTER
+   09. HOME â€” EXCHANGE POSTER
    ========================================================================= */
 .exchange-banner {
     padding: clamp(56px, 7vw, 92px) 0;
@@ -991,7 +991,7 @@ nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 .eb-btns { gap: 10px; }
 
 /* =========================================================================
-   10. HOME — BRAND STATEMENT
+   10. HOME â€” BRAND STATEMENT
    ========================================================================= */
 .brand-statement {
     position: relative;
@@ -1565,7 +1565,7 @@ footer {
     .tb-call { font-size: 0.65rem; }
     .tb-lbl { display: none; }
     .top-bar-right { display: none; }
-    .logo-img { height: 40px; }
+    .logo-img { height: 48px; }
     .logo-text { font-size: 0.95rem; letter-spacing: 0.1em; }
     .logo-text span { font-size: 0.4rem; letter-spacing: 0.16em; }
     .header-inner { padding: 11px 16px; gap: 10px; }
