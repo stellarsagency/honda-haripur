@@ -179,16 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (e) {}
     }
 
-    // Test drive form
-    const testDriveForm = document.getElementById('testDriveForm');
-    if (testDriveForm) {
-        testDriveForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for booking a test drive! We will contact you shortly to confirm your appointment.');
-            this.reset();
-        });
-    }
-
     // Back to top
     const backToTop = document.getElementById('backToTop');
     if (backToTop) {
