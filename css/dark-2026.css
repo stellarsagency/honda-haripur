@@ -1794,7 +1794,17 @@ footer {
    ========================================================================= */
 @media (max-width: 640px) {
     html { scroll-padding-top: 230px; }
-    .hero-banner { min-height: 460px; }
+    .hero-facility { min-height: 500px; }
+    .hero-facility-content { padding: 96px 0 150px; }
+    .hero-facility h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
+    .hero-facility-tag { font-size: 0.88rem; margin-bottom: 24px; }
+    .hero-facility-btns .btn { padding: 11px 16px; font-size: 0.72rem; }
+    .hero-facility-strip { position: relative; }
+    .hero-facility-strip-inner { flex-wrap: wrap; }
+    .hfs-item { flex: 1 1 50%; max-width: none; border-right: 0; border-bottom: 1px solid var(--d-line); padding: 13px 8px; font-size: 0.66rem; }
+    .hfs-item:nth-child(odd) { border-right: 1px solid var(--d-line); }
+    .hfs-item:nth-last-child(-n+2) { border-bottom: 0; }
+    .hero-banner { min-height: 500px; }
     .hero-slide-content { padding: 84px 18px 96px; }
     .hero-slide-content h1 { font-size: clamp(2rem, 11vw, 2.6rem); margin-bottom: 12px; }
     .hero-slide-content p { font-size: 0.86rem; margin-bottom: 20px; }
@@ -1833,3 +1843,74 @@ footer {
     .quick-btn { font-size: 0.66rem; padding: 7px 12px; }
     .quick-btn-sales .qb-stack small { font-size: 0.38rem; }
 }
+/* =========================================================================
+   HERO - Honda facility showcase
+   ========================================================================= */
+.hero-facility { height: auto; min-height: 640px; }
+.hero-facility-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero-facility-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5) saturate(1.05); transform: scale(1.03); }
+.hero-facility-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(100deg, rgba(5, 5, 5, 0.95) 0%, rgba(5, 5, 5, 0.8) 42%, rgba(5, 5, 5, 0.35) 100%),
+        linear-gradient(180deg, transparent 58%, rgba(5, 5, 5, 0.7) 100%);
+}
+.hero-facility-content { position: relative; z-index: 2; padding: 130px 0 160px; max-width: 640px; }
+.hero-facility-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    color: var(--d-red);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.hero-facility-kicker i { font-size: 0.85rem; }
+.hero-facility h1 {
+    margin-bottom: 18px;
+    color: #fff;
+    font-family: var(--d-display);
+    font-size: clamp(2.6rem, 5.2vw, 4.4rem);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+.hero-facility h1 .accent { color: var(--d-red); }
+.hero-facility-tag { max-width: 520px; margin-bottom: 30px; color: var(--d-muted); font-size: 1rem; line-height: 1.7; }
+.hero-facility-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-facility-btns .btn-outline-white { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.2); }
+.hero-facility-strip {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background: rgba(5, 5, 5, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid var(--d-line);
+}
+.hero-facility-strip-inner { display: flex; justify-content: center; gap: 0; }
+.hfs-item {
+    flex: 1;
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 17px 12px;
+    color: #cfcfcf;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-right: 1px solid var(--d-line);
+    transition: background 0.25s ease, color 0.25s ease;
+}
+.hfs-item:last-child { border-right: 0; }
+.hfs-item i { color: var(--d-red); font-size: 0.9rem; }
+.hfs-item:hover { color: #fff; background: var(--d-red-soft); }
+'
